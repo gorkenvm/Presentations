@@ -1,0 +1,89 @@
+# Convolutional Neural Network
+
+- Course Materials
+- Chapter 1: Motivation & Introduction
+- Introduction
+- Pixels
+- Gray Scale Images
+- Color Images
+- Exercises
+- Chapter 2: Basic Concepts & Learning Process
+- Feature Extraction
+- What is Convolution?
+- Convolution Layers
+- Pooling, Flatten, Fully Connected Layers
+- Learning Process
+- Cost Function (Softmax, Cross Entropi, MacroAUC, MicroAUC)
+- Exercises
+- Chapter 3: Application Image Classification With CNN
+- Data Preparation
+- Create Model
+- Model Compile
+- Model Training
+- Assignment: Image Classification
+- Assignment Solution: Image Classification
+- Case Study: Garbage Classification
+- Case Study: Dataset Drive
+- Case Study: Data Augmentation
+- GoogLeNet
+- Exercises
+- Canlı Ders 9: Konu Anlatımı
+- Chapter 4: CNN Architectures
+- Model Sources
+- Data Sets
+- LeNet
+- AlexNet
+- VGG
+- Application: VGG
+- Application: Xception
+- ResNet (Residual Network)
+- Application: ResNet (Residual Network)
+- Application: InceptionResNetV2
+- More Models (MobileNet, DenseNet, EfficientNet)
+- Application: MobileNet, DenseNet, EfficientNet
+- Bonus: Compare All Models
+- Bonus: PyTorch
+- Assignment: Using Pretrained Model
+- Assignment Solution: Using Pretrained Model
+- Ödev Yükleme: Using Pretrained Model
+- Assignment Solution: Using Pretrained Model
+- Exercises
+- Chapter 5: Transfer Learning and Fine Tuning
+- Frozen Layers: MobileNet Backbone
+- Layers
+- Training
+- Model Performance
+- Predictions
+- Full Network Fine Tuning
+- Full Network Training
+- Full Network Prediction
+- Assignment: Fine Tuning
+- Ödev Yükleme: Fine Tuning
+- Assignment Solution: Fine Tuning
+- Assignment Solution: Fine Tuning
+- Exercises
+- Chapter 6: Object Detection
+- Sliding Window
+- R-CNN
+- Fast R-CNN
+- Faster R-CNN
+- Understanding the Object Detection Process: Data Structures
+- Understanding the Object Detection Process: Training
+- Understanding the Object Detection Process: Prediction
+- Application: Faster R-CNN
+- Prediction
+- Detect Objects
+- Mask R-CNN
+- Application: Mask R-CNN
+- SSD (Single Shot Multibox Detector)
+- Application: SSD (Single Shot Multibox Detector)
+- RetinaNet
+- Application: RetinaNet
+- YOLO (You Only Look Once)
+- Application: YOLO v8
+- Application: YOLO v3
+- Application: Object Tracking with YOLO v3
+- Application: Object Tracking with YOLO v8
+- Application: Object Counting with YOLO v8
+- Application: Real Time Object Detection
+- Exercises
