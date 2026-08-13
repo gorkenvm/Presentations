@@ -1071,30 +1071,14 @@ etiketlenmiş **17.872 görüntülük** bir veri seti var — dört sınıf: `an
 """)
 
 code(r"""
-# --- Bu bolum tek basina calisabilsin diye kendi kurulumunu yapar ---
-# (kernel yeniden baslarsa ya da dogrudan buraya atlanirsa hata vermesin)
-!pip install -q inference-sdk
-
+# Kernel yeniden baslamissa diye — yeniden KURULUM degil, sadece import
 import os, urllib.request
 import numpy as np
 import cv2
 import matplotlib.pyplot as plt
 
-try:
-    istemci                       # 9. bolumde kurulmus muydu?
-except NameError:
-    from inference_sdk import InferenceHTTPClient
-    ROBOFLOW_API_KEY = ""         # <- anahtariniz (9. bolumdekiyle ayni)
-    istemci = InferenceHTTPClient(api_url="https://detect.roboflow.com",
-                                  api_key=ROBOFLOW_API_KEY)
-
-try:
-    goster                        # 0. bolumdeki yardimci
-except NameError:
-    def goster(gorsel_bgr, baslik="", genislik=9):
-        rgb = cv2.cvtColor(gorsel_bgr, cv2.COLOR_BGR2RGB)
-        plt.figure(figsize=(genislik, genislik * rgb.shape[0] / rgb.shape[1]))
-        plt.imshow(rgb); plt.title(baslik); plt.axis("off"); plt.show()
+# NOT: "istemci" 9. bolumde kuruluyor. Tanimli degilse once o bolumun
+# ilk hucresini calistirin (API anahtari orada giriliyor).
 
 # Test icin veri setinin kendi goruntulerini kullaniyoruz (herkese acik URL'ler)
 KOPEK_MODEL = "dog-emotion-ovhny/2"
@@ -1124,12 +1108,6 @@ plt.figure(figsize=(16, 15))
 tutan = 0
 
 for i, (url, gercek) in enumerate(kopek_gorselleri):
-    # NOT: infer() confidence parametresi almaz. Esigi degistirmek isterseniz
-    # yapilandirmayi istemciye verirsiniz:
-    #   from inference_sdk import InferenceConfiguration
-    #   istemci_dusuk = istemci.with_configuration(
-    #       InferenceConfiguration(confidence_threshold=0.15))
-    # Varsayilan esik bu model icin yeterli calisiyor.
     cevap = istemci.infer(url, model_id=KOPEK_MODEL)
 
     ham = urllib.request.urlopen(url).read()
