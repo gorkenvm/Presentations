@@ -23,8 +23,12 @@ def md(metin):
 
 def code(kaynak):
     # !pip / %magic satırları Python değil; doğrulamadan önce maskele
-    kontrol = "\n".join("pass" if satir.lstrip().startswith(("!", "%")) else satir
-                        for satir in kaynak.splitlines())
+    def _maskele(satir):
+        if satir.lstrip().startswith(("!", "%")):
+            girinti = satir[:len(satir) - len(satir.lstrip())]
+            return girinti + "pass"      # girintiyi koru, yoksa blok bozulur
+        return satir
+    kontrol = "\n".join(_maskele(satir) for satir in kaynak.splitlines())
     ast.parse(kontrol)
     hucreler.append({"cell_type": "code", "metadata": {}, "execution_count": None,
                      "outputs": [], "source": kaynak.strip().splitlines(True)})
@@ -1067,24 +1071,57 @@ etiketlenmiş **17.872 görüntülük** bir veri seti var — dört sınıf: `an
 """)
 
 code(r"""
+# --- Bu bolum tek basina calisabilsin diye kendi kurulumunu yapar ---
+# (kernel yeniden baslarsa ya da dogrudan buraya atlanirsa hata vermesin)
+!pip install -q inference-sdk
+
+import os, urllib.request
+import numpy as np
+import cv2
+import matplotlib.pyplot as plt
+
+try:
+    istemci                       # 9. bolumde kurulmus muydu?
+except NameError:
+    from inference_sdk import InferenceHTTPClient
+    ROBOFLOW_API_KEY = ""         # <- anahtariniz (9. bolumdekiyle ayni)
+    istemci = InferenceHTTPClient(api_url="https://detect.roboflow.com",
+                                  api_key=ROBOFLOW_API_KEY)
+
+try:
+    goster                        # 0. bolumdeki yardimci
+except NameError:
+    def goster(gorsel_bgr, baslik="", genislik=9):
+        rgb = cv2.cvtColor(gorsel_bgr, cv2.COLOR_BGR2RGB)
+        plt.figure(figsize=(genislik, genislik * rgb.shape[0] / rgb.shape[1]))
+        plt.imshow(rgb); plt.title(baslik); plt.axis("off"); plt.show()
+
 # Test icin veri setinin kendi goruntulerini kullaniyoruz (herkese acik URL'ler)
 KOPEK_MODEL = "dog-emotion-ovhny/2"
 
+KOK = "https://source.roboflow.com/yAhbdfctUiTr4NpZ9RBEM1xoAWq2/"
+
+# (goruntu kimligi, veri setindeki gercek etiket) — dort sinifa da ornek var
 kopek_gorselleri = [
-    # (URL, veri setindeki gercek etiket)
-    ("https://source.roboflow.com/yAhbdfctUiTr4NpZ9RBEM1xoAWq2/QrsajeXFBd3vi0fJMH4Y/original.jpg", "angry"),
-    ("https://source.roboflow.com/yAhbdfctUiTr4NpZ9RBEM1xoAWq2/9XJxrNqgxuQWRUH0U3XB/original.jpg", "angry"),
-    ("https://source.roboflow.com/yAhbdfctUiTr4NpZ9RBEM1xoAWq2/g0ldy3URJdCkMWUaHylj/original.jpg", "angry"),
-    ("https://source.roboflow.com/yAhbdfctUiTr4NpZ9RBEM1xoAWq2/atsUgfq2kIH9uWNlHQj2/original.jpg", "relaxed"),
-    ("https://source.roboflow.com/yAhbdfctUiTr4NpZ9RBEM1xoAWq2/XSQaWPBOY1vX237WtYzl/original.jpg", "relaxed"),
-    ("https://source.roboflow.com/yAhbdfctUiTr4NpZ9RBEM1xoAWq2/CDQzlmQ3inCYm1SQ30lR/original.jpg", "relaxed"),
+    ("QrsajeXFBd3vi0fJMH4Y", "angry"),
+    ("9XJxrNqgxuQWRUH0U3XB", "angry"),
+    ("g0ldy3URJdCkMWUaHylj", "angry"),
+    ("atsUgfq2kIH9uWNlHQj2", "relaxed"),
+    ("XSQaWPBOY1vX237WtYzl", "relaxed"),
+    ("Q1MIg8LIiBZiRMsFOul4", "relaxed"),
+    ("zo7Y2mTWVqQh6NTGfoot", "happy"),
+    ("yf5YB6UVleWI5X0z1ZwQ", "happy"),
+    ("CM20Mv9BVNFfAKyBSY6I", "sad"),
 ]
+kopek_gorselleri = [(KOK + kimlik + "/original.jpg", etiket)
+                    for kimlik, etiket in kopek_gorselleri]
 
 # Duygu basina renk (BGR) — kirmizi = dikkat
 DUYGU_RENK = {"angry": (60, 60, 220), "sad": (180, 120, 60),
               "happy": (80, 200, 80), "relaxed": (200, 160, 60)}
 
-plt.figure(figsize=(17, 10))
+plt.figure(figsize=(16, 15))
+tutan = 0
 
 for i, (url, gercek) in enumerate(kopek_gorselleri):
     # NOT: infer() confidence parametresi almaz. Esigi degistirmek isterseniz
@@ -1106,11 +1143,12 @@ for i, (url, gercek) in enumerate(kopek_gorselleri):
         cv2.rectangle(gorsel, (x1, y1), (x2, y2), renk, 4)
         baslik = p["class"] + " " + str(round(p["confidence"], 2)) + "   (gercek: " + gercek + ")"
         dogru_mu = (p["class"] == gercek)
+        tutan += dogru_mu
     else:
         baslik = "tespit yok   (gercek: " + gercek + ")"
         dogru_mu = False
 
-    plt.subplot(2, 3, i + 1)
+    plt.subplot(3, 3, i + 1)
     plt.imshow(cv2.cvtColor(gorsel, cv2.COLOR_BGR2RGB))
     plt.title(baslik, fontsize=11, color="green" if dogru_mu else "red")
     plt.axis("off")
@@ -1118,6 +1156,8 @@ for i, (url, gercek) in enumerate(kopek_gorselleri):
 plt.suptitle("Kopek duygu tespiti — dog-emotion-ovhny/2", fontsize=14)
 plt.tight_layout()
 plt.show()
+
+print(f"{tutan} / {len(kopek_gorselleri)} tahmin veri setindeki etiketle ortusuyor")
 """)
 
 md("""
@@ -1126,6 +1166,8 @@ md("""
 
 code(r"""
 # Kendi fotografinizi yukleyin
+from google.colab import files
+
 yuklenen = files.upload()
 
 for ad in yuklenen:
