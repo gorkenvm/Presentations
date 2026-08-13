@@ -140,7 +140,9 @@ md("""
 """)
 
 code(r"""
-!pip install -q ultralytics
+# TUM kurulumlar burada, TEK SEFERDE. Ders ortasinda pip calistirmak
+# Pillow gibi paketleri gunceller ve calisan ortami bozar.
+!pip install -q ultralytics inference-sdk
 
 import os, zipfile, urllib.request
 import numpy as np
@@ -855,9 +857,7 @@ Bu modeli **eğitmeden**, tek bir API çağrısıyla çalıştırabiliriz.
 """)
 
 code(r"""
-!pip install -q inference-sdk
-
-from inference_sdk import InferenceHTTPClient
+from inference_sdk import InferenceHTTPClient   # kurulumu 0. bolumde yapildi
 
 ROBOFLOW_API_KEY = ""          # <- kendi anahtariniz: app.roboflow.com > Settings > API Keys
 MODEL_ID = "trash-classification-fg7fz/2"   # veri seti / surum numarasi
