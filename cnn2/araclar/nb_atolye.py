@@ -798,52 +798,149 @@ code(r"""
 
 from inference_sdk import InferenceHTTPClient
 
-ROBOFLOW_API_KEY = ""          # ← kendi anahtarınızı buraya
+ROBOFLOW_API_KEY = ""          # <- kendi anahtariniz: app.roboflow.com > Settings > API Keys
+MODEL_ID = "trash-classification-fg7fz/2"   # veri seti / surum numarasi
 
 istemci = InferenceHTTPClient(api_url="https://detect.roboflow.com",
                               api_key=ROBOFLOW_API_KEY)
 
-TEST_GORSEL = os.path.join(COP_DIZIN, "metal10.jpg")   # ya da kendi çöp fotoğrafınız
+# Dunku dersten gelen cop fotograflarinin hepsini tek tek modele soralim
+cop_yollari = sorted(glob(os.path.join(COP_DIZIN, "*.jpg")))
+print(len(cop_yollari), "fotograf bulundu\n")
 
-# confidence dusuk tutuldu: model yakin cekim cop fotograflariyla egitilmis
-cevap = istemci.infer(TEST_GORSEL, model_id="trash-classification-fg7fz/2")
+SINIF_RENK = {                 # her sinifa ayri renk (BGR)
+    "cardboard": (60, 160, 220), "glass": (200, 160, 60), "metal": (150, 150, 150),
+    "paper":     (90, 200, 90),  "plastic": (200, 90, 200), "trash": (80, 80, 200),
+}
 
-print(f"{len(cevap['predictions'])} nesne bulundu:\n")
-for p in cevap["predictions"]:
-    print(f"  {p['class']:12s} {p['confidence']:.3f}   "
-          f"merkez=({int(p['x'])}, {int(p['y'])})  "
-          f"boyut={int(p['width'])}x{int(p['height'])}")
+sekil = plt.figure(figsize=(17, 10))
+ozet = []
+
+for i, yol in enumerate(cop_yollari):
+    cevap = istemci.infer(yol, model_id=MODEL_ID)
+    tahminler = cevap["predictions"]
+
+    gorsel = cv2.imread(yol)
+    dosya_adi = os.path.basename(yol)
+    gercek = "".join(c for c in dosya_adi if not c.isdigit()).replace(".jpg", "")
+
+    for p in tahminler:
+        # Roboflow merkez + genislik/yukseklik verir; kose koordinatina cevirelim
+        x1 = int(p["x"] - p["width"] / 2)
+        y1 = int(p["y"] - p["height"] / 2)
+        x2 = int(p["x"] + p["width"] / 2)
+        y2 = int(p["y"] + p["height"] / 2)
+
+        renk = SINIF_RENK.get(p["class"], (60, 200, 90))
+        cv2.rectangle(gorsel, (x1, y1), (x2, y2), renk, 3)
+
+        etiket = p["class"] + " " + str(round(p["confidence"], 2))
+        (tw, th), _ = cv2.getTextSize(etiket, cv2.FONT_HERSHEY_SIMPLEX, 0.7, 2)
+        cv2.rectangle(gorsel, (x1, max(y1 - th - 10, 0)), (x1 + tw + 8, y1), renk, -1)
+        cv2.putText(gorsel, etiket, (x1 + 4, max(y1 - 6, th)),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.7, (255, 255, 255), 2)
+
+        ozet.append({
+            "dosya": dosya_adi, "gercek": gercek, "tahmin": p["class"],
+            "guven": p["confidence"],
+            "kutu": (x1, y1, x2, y2),
+            "boyut": (int(p["width"]), int(p["height"])),
+        })
+
+    plt.subplot(2, 3, i + 1)
+    plt.imshow(cv2.cvtColor(gorsel, cv2.COLOR_BGR2RGB))
+    plt.title(dosya_adi + "  ->  " + str(len(tahminler)) + " nesne", fontsize=11)
+    plt.axis("off")
+
+plt.suptitle("Roboflow cop tespit modeli — dunku 6 sinif, bu kez kutu ile", fontsize=14)
+plt.tight_layout()
+plt.show()
 """)
 
 code(r"""
-# Kutuları kendimiz çizelim — Roboflow merkez + genişlik/yükseklik veriyor
-gorsel = cv2.imread(TEST_GORSEL)
+# Bulunanlarin dokumu
+print(f"{'dosya':22s} {'gercek':11s} {'tahmin':11s} {'guven':>7s}   kutu (x1,y1,x2,y2)")
+print("-" * 78)
 
-for p in cevap["predictions"]:
-    x1 = int(p["x"] - p["width"] / 2)
-    y1 = int(p["y"] - p["height"] / 2)
-    x2 = int(p["x"] + p["width"] / 2)
-    y2 = int(p["y"] + p["height"] / 2)
+dogru = 0
+for s in ozet:
+    isaret = "+" if s["tahmin"] == s["gercek"] else "-"
+    dogru += (s["tahmin"] == s["gercek"])
+    print(f"{s['dosya']:22s} {s['gercek']:11s} {s['tahmin']:11s} "
+          f"{s['guven']:7.3f}   {s['kutu']}  {isaret}")
 
-    cv2.rectangle(gorsel, (x1, y1), (x2, y2), (60, 200, 90), 3)
-    etiket = f"{p['class']} {p['confidence']:.2f}"
-    cv2.rectangle(gorsel, (x1, y1 - 26), (x1 + 11 * len(etiket), y1), (60, 200, 90), -1)
-    cv2.putText(gorsel, etiket, (x1 + 4, y1 - 7),
-                cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255, 255, 255), 2)
-
-goster(gorsel, "Roboflow — çöp tespiti (dünkü sınıflar)")
+print(f"\n{dogru} / {len(ozet)} tahmin dosya adiyla ortusuyor")
+print("(dosya adi kaba bir olcut — bazi fotograflarda birden fazla nesne olabilir)")
 """)
 
 md("""
 Dikkat edin: **hiçbir eğitim yapmadık.** Birisi 5742 görüntüyü etiketlemiş, eğitmiş
 ve paylaşmış. Biz sadece kullandık.
 
-Kendi nesneniz için hazır bir model yoksa yol şu:
+Kutuların yanındaki sayı modelin güveni. Dünkü sınıflandırıcı da benzer sayılar
+veriyordu — fark şu: bu sefer **nesnenin nerede olduğunu da** biliyoruz.
 
-1. **Topla** — 200-500 fotoğraf genelde başlangıç için yeter
-2. **Etiketle** — her nesnenin etrafına kutu çiz (Roboflow'un etiketleme aracı bunun için)
-3. **Eğit** — dünkü transfer learning mantığının aynısı, sadece tespit için
-4. **Dene ve düzelt** — modelin kaçırdığı örnekleri veri setine ekle
+## 9.1 Peki kendimiz eğitseydik ne kadar sürerdi?
+
+Bu, atölyede en çok gelen soru. Somut cevap:
+
+| Senaryo | Süre (T4 GPU) |
+|---|---|
+| 5742 görüntü, 30 epoch, 640px — **ciddi bir model** | 1,5 – 2,5 saat |
+| 5742 görüntü, 10 epoch, 640px — kabul edilebilir | 30 – 50 dk |
+| 500 görüntü, 10 epoch, 416px — **gösterim amaçlı** | 4 – 8 dk |
+
+Yani **derste tam eğitim yapmak mümkün değil.** Ama kodun kendisi şaşırtıcı derecede
+kısa — asıl iş veriyi hazırlamakta.
+
+> **Önemli:** Dün kullandığımız çöp veri setiyle **bunu yapamayız.** O veri
+> *sınıflandırma* için etiketlenmişti: her fotoğrafın bir etiketi vardı ama
+> **kutusu yoktu**. Tespit modeli eğitmek için her nesnenin etrafına kutu çizilmiş
+> olması gerekir. İşte Roboflow'un yaptığı iş tam olarak bu.
+""")
+
+code(r"""
+# --- Kendi tespit modelinizi egitmek: kod bu kadar ---
+# Derste CALISTIRMIYORUZ (uzun surer). Evde deneyin.
+
+EGITIM_KODU = '''
+# 1) Veri setini Roboflow'dan YOLO formatinda indir
+from roboflow import Roboflow
+rf = Roboflow(api_key="SIZIN_ANAHTARINIZ")
+proje = rf.workspace("trashclassification").project("trash-classification-fg7fz")
+veri = proje.version(2).download("yolov11")     # klasor + data.yaml olusturur
+
+# 2) Egit — tek satir
+from ultralytics import YOLO
+model = YOLO("yolo11n.pt")          # hazir agirliklardan basla (transfer learning!)
+sonuc = model.train(
+    data=veri.location + "/data.yaml",
+    epochs=30,          # dusur: daha hizli, daha kaba
+    imgsz=640,          # dusur: cok daha hizli
+    batch=16,
+    patience=10,        # 10 epoch iyilesme yoksa dur
+    project="cop_tespit",
+)
+
+# 3) Kullan
+en_iyi = YOLO("cop_tespit/train/weights/best.pt")
+en_iyi.predict("test.jpg", save=True)
+'''
+
+print(EGITIM_KODU)
+""")
+
+md("""
+`model.train()` satırındaki mantık **dünküyle birebir aynı**: hazır ağırlıklardan
+başlıyoruz, kendi verimizle ince ayar yapıyoruz. Sadece bu kez çıktı etiket değil,
+kutu.
+
+**Kendi nesneniz için yol haritası:**
+
+1. **Topla** — 200-500 fotoğraf. Çeşitlilik sayıdan önemli: farklı açı, ışık, arka plan.
+2. **Etiketle** — her nesnenin etrafına kutu çiz. Fotoğraf başına yarım-bir dakika.
+3. **Eğit** — yukarıdaki kod. Küçük veriyle 10-20 dakika.
+4. **Bak ve düzelt** — modelin kaçırdığı örnekleri veri setine ekle, tekrar eğit.
 
 > Etiketleme, işin en sıkıcı ama en belirleyici kısmıdır. Model kalitesi neredeyse
 > tamamen etiket kalitesine bağlıdır.
