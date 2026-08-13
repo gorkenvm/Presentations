@@ -1,10 +1,10 @@
 """atolye_yolo.ipynb üreticisi."""
 import ast, base64, json, mimetypes, os
 
-CIKTI = "/sessions/peaceful-lucid-dijkstra/mnt/cnn2/atolye/atolye_yolo.ipynb"
+CIKTI = "/sessions/peaceful-lucid-dijkstra/mnt/cnn2/atolye/atolye_yolo2.ipynb"
 RESIM_DIZIN = "/sessions/peaceful-lucid-dijkstra/mnt/cnn2/atolye/resimler"
 REPO = ("https://colab.research.google.com/github/gorkenvm/Presentations/"
-        "blob/main/cnn2/atolye/atolye_yolo.ipynb")
+        "blob/main/cnn2/atolye/atolye_yolo2.ipynb")
 
 hucreler = []
 
@@ -139,11 +139,29 @@ md("""
 ## 0. Kurulum ve veri
 """)
 
+md("""
+### Adım 1 — Kurulum
+
+> **ÖNEMLİ:** Bu hücre bittikten sonra **çalışma zamanını yeniden başlatın**
+> (`Çalışma zamanı → Oturumu yeniden başlat`), sonra aşağıdan devam edin.
+>
+> Sebep: kurulum Pillow gibi paketleri günceller. Aynı oturumda `import` yaparsanız
+> bellekteki eski sürümle diskteki yeni sürüm çakışır ve `ImportError` alırsınız.
+> Yeniden başlatmak bir kez yeterli — bir daha kurulum yapmayacağız.
+""")
+
 code(r"""
-# TUM kurulumlar burada, TEK SEFERDE. Ders ortasinda pip calistirmak
-# Pillow gibi paketleri gunceller ve calisan ortami bozar.
 !pip install -q ultralytics inference-sdk
 
+print("Kurulum bitti.")
+print("ŞİMDİ: Çalışma zamanı -> Oturumu yeniden başlat, sonra asagidan devam edin.")
+""")
+
+md("""
+### Adım 2 — Yeniden başlattıktan sonra buradan devam
+""")
+
+code(r"""
 import os, zipfile, urllib.request
 import numpy as np
 import matplotlib.pyplot as plt
