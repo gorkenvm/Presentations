@@ -947,7 +947,26 @@ kutu.
 """)
 
 # ══════════════════════════════════════════════════════════════════
+md(f"""
+---
+## 9.2 Bundan sonrası: yazarak
+
+{gorsel("atolye_kapanis.png", 980)}
+""")
+
 md("""
+Bugün yaptığımız her şey — veri seti bulmak, modeli çalıştırmak, sonuçlara bakmak —
+artık **konuşarak** da yapılabiliyor. Roboflow'un Claude bağlantısı 67 araç sunuyor:
+Universe'de arama, etiketleme işi açma, otomatik ön etiketleme, model eğitme, eğitimi
+izleme, sonuçları değerlendirme, hazır modelle tahmin.
+
+> Bu atölyede kullandığımız çöp tespit veri setini de böyle bulduk.
+
+**Ama şunu net söyleyeyim:** bu, kod bilmeyi gereksiz kılmıyor. Tam tersi —
+`conf` nedir, NMS ne yapar, neden `imgsz` artırınca küçük nesneler görünür,
+etiketlemenin neden en kritik iş olduğunu bilmiyorsanız, ne isteyeceğinizi de
+bilemezsiniz. Bugün öğrendikleriniz o yüzden değerli.
+
 ---
 # 10. Toparlayalım
 
@@ -972,6 +991,137 @@ md("""
 - Segmentasyon modeli (`-seg` ekli) — kutu yerine piksel maskesi
 - Poz tahmini (`-pose` ekli) — insan iskeleti
 - Kendi veri setinizi etiketleyip eğitmek
+""")
+
+md("""
+---
+---
+
+# Bonus — Köpek duygusu tespiti
+
+> Bir öğrencinin sorusu üzerine eklendi: *"Saldırgan bir köpeği tespit edebilir miyiz?"*
+
+Aynı yöntem, tamamen farklı bir problem. Roboflow Universe'de köpek duygusu için
+etiketlenmiş **17.872 görüntülük** bir veri seti var — dört sınıf: `angry`, `happy`,
+`relaxed`, `sad`.
+
+**Neden bu model?** Aynı konuda üç model daha denedim; bu hem en çok veriye sahip
+(17.872'ye karşı 1.765 ve 75) hem de test ettiğimde sınıfları gerçekten ayırt etti.
+""")
+
+code(r"""
+# Test icin veri setinin kendi goruntulerini kullaniyoruz (herkese acik URL'ler)
+KOPEK_MODEL = "dog-emotion-ovhny/2"
+
+kopek_gorselleri = [
+    # (URL, veri setindeki gercek etiket)
+    ("https://source.roboflow.com/yAhbdfctUiTr4NpZ9RBEM1xoAWq2/QrsajeXFBd3vi0fJMH4Y/original.jpg", "angry"),
+    ("https://source.roboflow.com/yAhbdfctUiTr4NpZ9RBEM1xoAWq2/9XJxrNqgxuQWRUH0U3XB/original.jpg", "angry"),
+    ("https://source.roboflow.com/yAhbdfctUiTr4NpZ9RBEM1xoAWq2/g0ldy3URJdCkMWUaHylj/original.jpg", "angry"),
+    ("https://source.roboflow.com/yAhbdfctUiTr4NpZ9RBEM1xoAWq2/atsUgfq2kIH9uWNlHQj2/original.jpg", "relaxed"),
+    ("https://source.roboflow.com/yAhbdfctUiTr4NpZ9RBEM1xoAWq2/XSQaWPBOY1vX237WtYzl/original.jpg", "relaxed"),
+    ("https://source.roboflow.com/yAhbdfctUiTr4NpZ9RBEM1xoAWq2/CDQzlmQ3inCYm1SQ30lR/original.jpg", "relaxed"),
+]
+
+# Duygu basina renk (BGR) — kirmizi = dikkat
+DUYGU_RENK = {"angry": (60, 60, 220), "sad": (180, 120, 60),
+              "happy": (80, 200, 80), "relaxed": (200, 160, 60)}
+
+plt.figure(figsize=(17, 10))
+
+for i, (url, gercek) in enumerate(kopek_gorselleri):
+    # conf dusuk: model emin olmadiginda bile ne dusundugunu gorelim
+    cevap = istemci.infer(url, model_id=KOPEK_MODEL, confidence=0.15)
+
+    ham = urllib.request.urlopen(url).read()
+    gorsel = cv2.imdecode(np.frombuffer(ham, np.uint8), cv2.IMREAD_COLOR)
+
+    if cevap["predictions"]:
+        p = max(cevap["predictions"], key=lambda t: t["confidence"])
+        x1 = int(p["x"] - p["width"] / 2);  y1 = int(p["y"] - p["height"] / 2)
+        x2 = int(p["x"] + p["width"] / 2);  y2 = int(p["y"] + p["height"] / 2)
+        renk = DUYGU_RENK.get(p["class"], (120, 120, 120))
+        cv2.rectangle(gorsel, (x1, y1), (x2, y2), renk, 4)
+        baslik = p["class"] + " " + str(round(p["confidence"], 2)) + "   (gercek: " + gercek + ")"
+        dogru_mu = (p["class"] == gercek)
+    else:
+        baslik = "tespit yok   (gercek: " + gercek + ")"
+        dogru_mu = False
+
+    plt.subplot(2, 3, i + 1)
+    plt.imshow(cv2.cvtColor(gorsel, cv2.COLOR_BGR2RGB))
+    plt.title(baslik, fontsize=11, color="green" if dogru_mu else "red")
+    plt.axis("off")
+
+plt.suptitle("Kopek duygu tespiti — dog-emotion-ovhny/2", fontsize=14)
+plt.tight_layout()
+plt.show()
+""")
+
+md("""
+## Kendi köpek fotoğrafınızla deneyin
+""")
+
+code(r"""
+# Kendi fotografinizi yukleyin
+yuklenen = files.upload()
+
+for ad in yuklenen:
+    cevap = istemci.infer(ad, model_id=KOPEK_MODEL, confidence=0.15)
+    gorsel = cv2.imread(ad)
+
+    print(ad, "->", len(cevap["predictions"]), "tespit")
+    for p in sorted(cevap["predictions"], key=lambda t: -t["confidence"]):
+        print(f"   {p['class']:9s} {p['confidence']:.3f}")
+        x1 = int(p["x"] - p["width"] / 2);  y1 = int(p["y"] - p["height"] / 2)
+        x2 = int(p["x"] + p["width"] / 2);  y2 = int(p["y"] + p["height"] / 2)
+        renk = DUYGU_RENK.get(p["class"], (120, 120, 120))
+        cv2.rectangle(gorsel, (x1, y1), (x2, y2), renk, 4)
+        cv2.putText(gorsel, p["class"] + " " + str(round(p["confidence"], 2)),
+                    (x1, max(y1 - 8, 16)), cv2.FONT_HERSHEY_SIMPLEX, 0.8, renk, 2)
+
+    goster(gorsel, ad)
+""")
+
+md("""
+## Bu modelin sınırları — dürüst konuşalım
+
+Amaç "ısırmak üzere olan köpeği tespit etmek" ise, bu modelin **o iş için yeterli
+olmadığını** bilerek kullanmak gerekir. Nedenleri:
+
+**1. Model duyguyu değil, etiketi öğrendi.**
+Birileri fotoğraflara bakıp "bu kızgın" demiş. Model o insanların kararını taklit
+ediyor. Köpeğin gerçek niyetini değil.
+
+**2. Fotoğraf, davranışın tamamı değil.**
+Köpek uzmanları saldırganlığı **duruştan, kuyruktan, tüylerden, hareketten ve sesten**
+okur. Tek karelik bir fotoğrafta bunların çoğu yok. Dişini gösteren bir köpek
+oynuyor da olabilir.
+
+**3. Sınıflar bulanık.**
+`angry` ile `sad` arasındaki sınırı etiketleyen kişi çizmiş. Başka biri farklı çizerdi.
+
+**4. Hata bedeli çok yüksek.**
+Çöp sınıflandırırken yanlış tahmin canını yakmaz. Burada **yanlış negatif** — saldırgan
+köpeği kaçırmak — birinin yaralanması demektir. Böyle bir sistemde `conf` eşiğini
+düşürmek ve her uyarıyı bir insana doğrulatmak gerekir.
+
+> **Söylenecek doğru cümle:** "Bu model fotoğraftaki köpeğin ifadesini dört kategoriden
+> birine sokuyor." **Söylenmemesi gereken:** "Bu model saldırgan köpekleri tespit eder."
+
+**Ciddi bir sistem için ne gerekirdi?**
+
+| Eksik | Ne yapılmalı |
+|---|---|
+| Tek kare yetmiyor | Video ve **takip** — duruş zaman içinde nasıl değişiyor |
+| Vücut dili yok | Poz tahmini (`-pose` modelleri): kuyruk, kulak, baş pozisyonu |
+| Uzman etiketi yok | Veteriner/davranış uzmanı etiketlemesi |
+| Ses yok | Hırlama sesi, çok güçlü bir sinyal |
+| Bağlam yok | Köpek kime bakıyor, mesafe ne, tasmalı mı |
+
+> Bu tam da dersin başındaki fikre bağlanıyor: **model sadece kendisine gösterileni
+> öğrenir.** Ona tek kare fotoğraf gösterirseniz, tek kare fotoğraftan çıkarılabilecek
+> kadarını öğrenir.
 """)
 
 # ══════════════════════════════════════════════════════════════════

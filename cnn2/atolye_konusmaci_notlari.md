@@ -364,6 +364,52 @@ veri setine ekleyip tekrarlayın."
 
 ---
 
+## Bonus — Köpek duygusu (5-10 dk, zaman kalırsa)
+
+> Bir öğrencinin "saldırgan köpeği tespit edebilir miyiz" sorusu üzerine eklendi.
+
+**Söyle:**
+"Geçen derste biriniz sordu: saldırgan bir köpeği tespit edebilir miyiz diye.
+Bakalım."
+
+**Yap:** Köpek duygu hücresini çalıştır — 6 fotoğraf, model tahminleri renkli.
+
+**Söyle:**
+"17 bin görüntüyle etiketlenmiş bir veri seti buldum. Dört sınıf: kızgın, mutlu,
+sakin, üzgün. Aynı yöntem — hiç eğitim yapmadan, hazır modeli çağırdık."
+
+**Yap:** Kendi köpek fotoğrafı yükleme hücresini göster (varsa biri yüklesin).
+
+### Ama burada durup dürüst konuşmak lazım
+
+> Bu, dersin en önemli 3 dakikası olabilir. Aceleye getirme.
+
+**Söyle:**
+"Şimdi size bu modeli **kullanmamanız gereken** yeri anlatacağım."
+
+"Bu model duyguyu öğrenmedi. **Etiketi** öğrendi. Birileri fotoğraflara bakıp
+'bu kızgın' demiş, model o insanların kararını taklit ediyor."
+
+"İkincisi: köpek uzmanları saldırganlığı duruştan, kuyruktan, tüylerden, hareketten
+ve sesten okur. Tek karelik bir fotoğrafta bunların çoğu yok. Dişini gösteren bir
+köpek oynuyor da olabilir."
+
+"Üçüncüsü ve en önemlisi: **hata bedeli.** Çöp sınıflandırırken yanlış tahmin canını
+yakmaz. Burada saldırgan köpeği kaçırmak birinin yaralanması demektir."
+
+**Vurgula — tek cümle:**
+"Doğru cümle şu: bu model fotoğraftaki köpeğin ifadesini dört kategoriden birine
+sokuyor. Yanlış cümle: bu model saldırgan köpekleri tespit eder."
+
+**Söyle (dersi bağla):**
+"Ve bu bizi dersin başındaki fikre geri götürüyor: **model sadece kendisine
+gösterileni öğrenir.** Ona tek kare fotoğraf gösterirseniz, tek kare fotoğraftan
+çıkarılabilecek kadarını öğrenir."
+
+**Soru at:** "Peki ciddi bir sistem için ne gerekirdi?"
+Cevaplar gelsin, sonra tablodaki listeyi göster: video + takip, poz tahmini
+(kuyruk/kulak), uzman etiketlemesi, ses, bağlam.
+
 ## Gelebilecek sorular
 
 **"YOLOv3 kullanmıyor muyuz? İnternette hep o var."**
