@@ -42,6 +42,24 @@ yapamadığı bir şeyi konuşacağız."
 
 **Soru at ve cevap bekle:** "Hazır bir modelin gövdesini alıp kendi kafamızı takmak."
 
+**Yap:** Dünkü CNN mimarisi şemasını (zebra) göster — animasyon dönerken konuş.
+
+**Söyle:**
+"Bu dünkü şemamız. Soldan görüntü giriyor, evrişim ve pooling katmanlarından geçiyor,
+sağda tek bir olasılık dağılımı çıkıyor: zebra 0.7, at 0.2, köpek 0.1."
+
+"Dün bu yapının **gövdesini** hazır aldık — o kısım görmeyi zaten biliyordu. **Kafasını**
+kesip attık, kendi altı çöp sınıfımıza göre yenisini taktık. Buna **transfer learning**
+dedik."
+
+"Sonra gövdenin son katmanlarını da açıp kendi verimizle biraz oynattık. Buna da
+**fine tuning** dedik — öğrenme oranını yüz kat düşürerek, çünkü yoksa modelin
+öğrendiklerini silecektik."
+
+**Vurgula — bugüne köprü:**
+"Şimdi şemanın sağ ucuna bir daha bakın. Çıktı **tek bir olasılık dağılımı**.
+Bugünkü dersin tamamı, bu tek çıktının neden yetmediği üzerine."
+
 **Söyle:** "Bugün de hazır model kullanacağız. Ama bu sefer eğitim bile yapmayacağız —
 model zaten hazır, biz sadece çalıştıracağız."
 
@@ -150,18 +168,50 @@ kesen bir sistem yazıyorsanız yanlış saymak istemezsiniz, yükseltirsiniz."
 ### 3.2 NMS
 
 **Söyle:**
-"Bir şey daha var. Model aslında yüzlerce kutu üretiyor. Aynı arabanın üstüne
-onlarca kutu düşüyor. Biz onları görmüyoruz çünkü arada bir temizlik adımı var:
-**NMS**, yani maksimum olmayanı bastırma."
+"Bir şey daha var. Model aslında yüzlerce aday kutu üretir. Aynı arabanın üstüne
+onlarca kutu düşer. Biz onları görmüyoruz çünkü arada bir temizlik adımı var:
+**NMS** — maksimum olmayanı bastırma."
 
-"Mantığı basit: üst üste binen kutulardan en güvenli olanı tut, kalanları at."
+"Mantığı basit: üst üste binen kutulardan en güvenli olanı tut, kalanları at.
+`iou` parametresi de 'ne kadar üst üste binerlerse aynı sayılsın' eşiği."
 
-**Soru at:** "Peki bu temizliği kapatırsak ne görürüz?"
+**Yap:** `iou` hücresini çalıştır — sadece sayılar basar, üç görsel yok.
 
-**Yap:** `iou` hücresini çalıştır.
+**Ekranda:** Üç satır, kutu sayıları birbirine çok yakın.
 
-**Söyle:** "0.95'te bakın — aynı arabanın üstünde birden fazla kutu belirdi.
-NMS'in ne iş yaptığı en iyi böyle anlaşılıyor."
+**Söyle (bu bir hata değil, dersin konusu):**
+"Sayılar neredeyse aynı çıktı. Bu bir hata değil — göstermek istediğim şey tam da bu."
+
+"Eski YOLO'lar, v3 v5 v8, aynı nesne için yüzlerce aday üretirdi. NMS olmasa görüntü
+kutudan görünmezdi. Yeni nesil modeller ise eğitim sırasında 'her nesne için tek kutu
+üret' diye öğretiliyor. YOLO26 bunu bir adım ileri götürüp NMS'i tamamen kaldırdı."
+
+"Yani NMS'i öğrenmemiz gerekiyor çünkü hâlâ pek çok modelde var. Ama artık onu
+çalışırken görmek zor. Bu, alanın ilerlediğinin işareti."
+
+> Öğrenci "o zaman neden anlatıyoruz" derse: eski modellerle çalışırken, kendi
+> modelini eğitirken ve literatürü okurken karşına çıkacak.
+
+### 3.3 Asıl fark yaratan parametre: imgsz
+
+**Söyle:**
+"Şimdi gerçekten fark yaratan bir parametre göstereceğim. Model fotoğrafı olduğu gibi
+işlemiyor — önce sabit bir boyuta küçültüyor. Varsayılan 640 piksel."
+
+**Soru at:** "Peki uzaktaki küçük arabalar bu küçültmede ne oluyor?"
+
+**Yap:** `imgsz` hücresini çalıştır.
+
+**Ekranda:** Üç görsel — 320, 640, 1280. Nesne sayıları belirgin şekilde farklı.
+
+**Söyle:**
+"320'de uzaktaki küçük araçlar tamamen kayboldu. 1280'de geri geldiler. Model onları
+'göremiyordu' çünkü küçültme sırasında birkaç piksele inmişlerdi."
+
+"Bedeli süre. 1280 dört kat daha yavaş."
+
+**Pratik kural olarak söyle:** "Nesneleriniz küçük ve uzaksa imgsz artırın.
+Yakın ve büyükse artırmanın faydası yok, sadece yavaşlarsınız."
 
 ---
 
@@ -237,12 +287,31 @@ sistemlerin tam olarak yaptığı iş. Gördüğünüz gibi çok az kodla."
 
 **Söyle:** "Şimdi eğlenceli kısım. Kendi fotoğrafımızı verelim."
 
-**Yap:** Sırayla URL, dosya yükleme, webcam. Webcam çalışırsa **sınıfın fotoğrafını çek.**
+**Yap:** Sırayla URL, dosya yükleme, webcam.
 
-**Söyle (sınıf fotoğrafı çıkınca):**
-"Hepiniz `person` olarak işaretlendiniz. Model sizi tek tek buldu, hem de saydı."
+**Dosya yükleme hücresinde:** Üstteki `AYAR` sözlüğünde `conf`, `iou`, `imgsz`,
+`max_det` var. Aynı fotoğrafla `conf` değerini değiştirip birkaç kez çalıştır —
+öğrenci parametrenin etkisini kendi fotoğrafında görsün.
 
-> Webcam izin isterse ve takılırsa vakit kaybetme, dosya yüklemeye geç.
+**Webcam — canlı yayın:**
+Kamera açılır ve kutular anlık olarak görüntünün üstüne çizilir. Durdurmak için
+görüntüye tıkla.
+
+**Söyle (kamera açıkken):**
+"Şu anda modele saniyede birkaç kare gidiyor ve anında geri dönüyor. Elimi
+oynatıyorum, kutu takip ediyor."
+
+**Yap:** Kamerayı sınıfa çevir.
+
+**Söyle:** "Hepiniz `person` olarak işaretlendiniz. Model sizi tek tek buldu."
+
+**Yap:** Bir şişe, telefon veya çanta göster — COCO'da olan nesneler.
+
+**Söyle:** "Şişe, telefon, çanta — hepsi COCO listesinde var, o yüzden buluyor.
+Birazdan listede **olmayan** bir şeyi deneyeceğiz."
+
+> Kamera izni takılırsa vakit kaybetme, dosya yüklemeye geç. Colab'da kamera
+> bazen ilk denemede açılmaz — hücreyi bir kez daha çalıştırmak genelde çözer.
 
 ---
 
