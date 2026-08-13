@@ -145,13 +145,15 @@ md("""
 > **ÖNEMLİ:** Bu hücre bittikten sonra **çalışma zamanını yeniden başlatın**
 > (`Çalışma zamanı → Oturumu yeniden başlat`), sonra aşağıdan devam edin.
 >
-> Sebep: kurulum Pillow gibi paketleri günceller. Aynı oturumda `import` yaparsanız
-> bellekteki eski sürümle diskteki yeni sürüm çakışır ve `ImportError` alırsınız.
-> Yeniden başlatmak bir kez yeterli — bir daha kurulum yapmayacağız.
+> Sebep: Colab'ın hazır Pillow'u ile ultralytics'in istediği sürüm çakışabiliyor,
+> pip bazen ikisini yarım yamalak karıştırıp bozuk bir kurulum bırakıyor
+> (`ImportError: cannot import name '_Ink'`). Önce Pillow'u tamamen kaldırıp
+> temiz kuruyoruz, sonra yeniden başlatıp devam ediyoruz.
 """)
 
 code(r"""
-!pip install -q ultralytics inference-sdk
+!pip uninstall -y pillow -q
+!pip install -q --no-cache-dir pillow==10.4.0 ultralytics inference-sdk
 
 print("Kurulum bitti.")
 print("ŞİMDİ: Çalışma zamanı -> Oturumu yeniden başlat, sonra asagidan devam edin.")
