@@ -1,0 +1,387 @@
+{
+ "482137": {
+  "ad": "Elif Yaman",
+  "aktif_egitim": "AI Data Scientist Bootcamp",
+  "egitim_turu": "Bootcamp Programı",
+  "kayitli_egitimler": [
+   "AI Data Scientist Bootcamp",
+   "Veri Bilimi İçin Python Programlama"
+  ],
+  "ilerleme": {
+   "tamamlanan_modul": 6,
+   "toplam_modul": 10,
+   "yuzde": 60
+  },
+  "odeme": {
+   "toplam_usd": 677,
+   "odenen_usd": 677,
+   "kalan_usd": 0
+  },
+  "canli_ders": [
+   {
+    "gun": "Salı",
+    "saat": "20:00",
+    "konu": "Makine Öğrenmesi"
+   },
+   {
+    "gun": "Perşembe",
+    "saat": "20:00",
+    "konu": "MS SQL Sorgulama"
+   },
+   {
+    "gun": "Cumartesi",
+    "saat": "10:00",
+    "konu": "Proje atölyesi"
+   }
+  ]
+ },
+ "482154": {
+  "ad": "Mert Doğan",
+  "aktif_egitim": "Data Analytics Bootcamp",
+  "egitim_turu": "Bootcamp Programı",
+  "kayitli_egitimler": [
+   "Data Analytics Bootcamp"
+  ],
+  "ilerleme": {
+   "tamamlanan_modul": 2,
+   "toplam_modul": 7,
+   "yuzde": 29
+  },
+  "odeme": {
+   "toplam_usd": 550,
+   "odenen_usd": 220,
+   "kalan_usd": 330
+  },
+  "canli_ders": [
+   {
+    "gun": "Pazartesi",
+    "saat": "20:00",
+    "konu": "Veri Analitiği için Python"
+   },
+   {
+    "gun": "Çarşamba",
+    "saat": "20:00",
+    "konu": "Power BI"
+   },
+   {
+    "gun": "Cumartesi",
+    "saat": "14:00",
+    "konu": "Vaka çalışması"
+   }
+  ]
+ },
+ "482166": {
+  "ad": "Zeynep Aksoy",
+  "aktif_egitim": "Data Scientist Path",
+  "egitim_turu": "Kariyer Yolculuğu",
+  "kayitli_egitimler": [
+   "Data Scientist Path",
+   "Zaman Serileri",
+   "Makine Öğrenmesi"
+  ],
+  "ilerleme": {
+   "tamamlanan_modul": 9,
+   "toplam_modul": 9,
+   "yuzde": 100
+  },
+  "odeme": {
+   "toplam_usd": 445,
+   "odenen_usd": 445,
+   "kalan_usd": 0
+  },
+  "canli_ders": []
+ },
+ "482178": {
+  "ad": "Burak Şahin",
+  "aktif_egitim": "Data Engineer Path",
+  "egitim_turu": "Kariyer Yolculuğu",
+  "kayitli_egitimler": [
+   "Data Engineer Path"
+  ],
+  "ilerleme": {
+   "tamamlanan_modul": 3,
+   "toplam_modul": 9,
+   "yuzde": 33
+  },
+  "odeme": {
+   "toplam_usd": 320,
+   "odenen_usd": 160,
+   "kalan_usd": 160
+  },
+  "canli_ders": []
+ },
+ "482190": {
+  "ad": "Ayşe Karataş",
+  "aktif_egitim": "Veri Bilimi İçin Python Programlama",
+  "egitim_turu": "Kurs",
+  "kayitli_egitimler": [
+   "Veri Bilimi İçin Python Programlama"
+  ],
+  "ilerleme": {
+   "tamamlanan_modul": 1,
+   "toplam_modul": 1,
+   "yuzde": 100
+  },
+  "odeme": {
+   "toplam_usd": 28,
+   "odenen_usd": 28,
+   "kalan_usd": 0
+  },
+  "canli_ders": []
+ },
+ "482203": {
+  "ad": "Can Erdem",
+  "aktif_egitim": "AI SQL",
+  "egitim_turu": "Uygulamalı Gelişim Programı",
+  "kayitli_egitimler": [
+   "AI SQL",
+   "MS SQL Sorgulama"
+  ],
+  "ilerleme": {
+   "tamamlanan_modul": 2,
+   "toplam_modul": 5,
+   "yuzde": 40
+  },
+  "odeme": {
+   "toplam_usd": 417,
+   "odenen_usd": 0,
+   "kalan_usd": 417
+  },
+  "canli_ders": [
+   {
+    "gun": "Çarşamba",
+    "saat": "20:00",
+    "konu": "SQL ve LLM entegrasyonu"
+   }
+  ]
+ },
+ "482215": {
+  "ad": "Deniz Ulusoy",
+  "aktif_egitim": "Data Analyst Path",
+  "egitim_turu": "Kariyer Yolculuğu",
+  "kayitli_egitimler": [
+   "Data Analyst Path"
+  ],
+  "ilerleme": {
+   "tamamlanan_modul": 4,
+   "toplam_modul": 7,
+   "yuzde": 57
+  },
+  "odeme": {
+   "toplam_usd": 220,
+   "odenen_usd": 220,
+   "kalan_usd": 0
+  },
+  "canli_ders": []
+ },
+ "482227": {
+  "ad": "Selin Aydın",
+  "aktif_egitim": "İK Analitiği Bootcamp",
+  "egitim_turu": "Bootcamp Programı",
+  "kayitli_egitimler": [
+   "İK Analitiği Bootcamp"
+  ],
+  "ilerleme": {
+   "tamamlanan_modul": 1,
+   "toplam_modul": 5,
+   "yuzde": 20
+  },
+  "odeme": {
+   "toplam_usd": 689,
+   "odenen_usd": 207,
+   "kalan_usd": 482
+  },
+  "canli_ders": [
+   {
+    "gun": "Salı",
+    "saat": "19:30",
+    "konu": "İK metrikleri"
+   },
+   {
+    "gun": "Cumartesi",
+    "saat": "11:00",
+    "konu": "Uygulama oturumu"
+   }
+  ]
+ },
+ "482239": {
+  "ad": "Emre Koç",
+  "aktif_egitim": "Generative AI & Prompt Engineer",
+  "egitim_turu": "Kariyer Yolculuğu",
+  "kayitli_egitimler": [
+   "Generative AI & Prompt Engineer"
+  ],
+  "ilerleme": {
+   "tamamlanan_modul": 0,
+   "toplam_modul": 1,
+   "yuzde": 0
+  },
+  "odeme": {
+   "toplam_usd": 250,
+   "odenen_usd": 250,
+   "kalan_usd": 0
+  },
+  "canli_ders": []
+ },
+ "482241": {
+  "ad": "Naz Güler",
+  "aktif_egitim": "Deep Learning to AI Agents",
+  "egitim_turu": "Uygulamalı Gelişim Programı",
+  "kayitli_egitimler": [
+   "Deep Learning to AI Agents",
+   "Doğal Dil İşlemeye Giriş"
+  ],
+  "ilerleme": {
+   "tamamlanan_modul": 5,
+   "toplam_modul": 8,
+   "yuzde": 62
+  },
+  "odeme": {
+   "toplam_usd": 517,
+   "odenen_usd": 310,
+   "kalan_usd": 207
+  },
+  "canli_ders": [
+   {
+    "gun": "Pazartesi",
+    "saat": "20:30",
+    "konu": "Derin öğrenme temelleri"
+   },
+   {
+    "gun": "Perşembe",
+    "saat": "20:30",
+    "konu": "AI Agent geliştirme"
+   }
+  ]
+ },
+ "482253": {
+  "ad": "Kaan Yıldırım",
+  "aktif_egitim": "Machine Learning Engineer Path",
+  "egitim_turu": "Kariyer Yolculuğu",
+  "kayitli_egitimler": [
+   "Machine Learning Engineer Path"
+  ],
+  "ilerleme": {
+   "tamamlanan_modul": 2,
+   "toplam_modul": 6,
+   "yuzde": 33
+  },
+  "odeme": {
+   "toplam_usd": 240,
+   "odenen_usd": 240,
+   "kalan_usd": 0
+  },
+  "canli_ders": []
+ },
+ "482265": {
+  "ad": "İrem Tosun",
+  "aktif_egitim": "Power BI Uzmanlığı: Veri Analitiği ve İş Zekası",
+  "egitim_turu": "Kariyer Yolculuğu",
+  "kayitli_egitimler": [
+   "Power BI Uzmanlığı: Veri Analitiği ve İş Zekası",
+   "CRM Analitiği"
+  ],
+  "ilerleme": {
+   "tamamlanan_modul": 0,
+   "toplam_modul": 1,
+   "yuzde": 0
+  },
+  "odeme": {
+   "toplam_usd": 178,
+   "odenen_usd": 178,
+   "kalan_usd": 0
+  },
+  "canli_ders": []
+ },
+ "482277": {
+  "ad": "Ali Serttaş",
+  "aktif_egitim": "AI Data Scientist Bootcamp",
+  "egitim_turu": "Bootcamp Programı",
+  "kayitli_egitimler": [
+   "AI Data Scientist Bootcamp"
+  ],
+  "ilerleme": {
+   "tamamlanan_modul": 10,
+   "toplam_modul": 10,
+   "yuzde": 100
+  },
+  "odeme": {
+   "toplam_usd": 649,
+   "odenen_usd": 649,
+   "kalan_usd": 0
+  },
+  "canli_ders": [
+   {
+    "gun": "Salı",
+    "saat": "20:00",
+    "konu": "Makine Öğrenmesi"
+   },
+   {
+    "gun": "Perşembe",
+    "saat": "20:00",
+    "konu": "MS SQL Sorgulama"
+   },
+   {
+    "gun": "Cumartesi",
+    "saat": "10:00",
+    "konu": "Proje atölyesi"
+   }
+  ]
+ },
+ "482289": {
+  "ad": "Ceren Bulut",
+  "aktif_egitim": "Quantum Makine Öğrenmesi",
+  "egitim_turu": "Uygulamalı Gelişim Programı",
+  "kayitli_egitimler": [
+   "Quantum Makine Öğrenmesi"
+  ],
+  "ilerleme": {
+   "tamamlanan_modul": 3,
+   "toplam_modul": 8,
+   "yuzde": 38
+  },
+  "odeme": {
+   "toplam_usd": 289,
+   "odenen_usd": 0,
+   "kalan_usd": 289
+  },
+  "canli_ders": [
+   {
+    "gun": "Salı",
+    "saat": "20:00",
+    "konu": "Kuantum devreleri"
+   }
+  ]
+ },
+ "482291": {
+  "ad": "Ozan Arslan",
+  "aktif_egitim": "Microsoft Fabric Uygulamalı Eğitim Programı",
+  "egitim_turu": "Uygulamalı Gelişim Programı",
+  "kayitli_egitimler": [
+   "Microsoft Fabric Uygulamalı Eğitim Programı",
+   "Azure Veri Mühendisi Uzmanlığı"
+  ],
+  "ilerleme": {
+   "tamamlanan_modul": 7,
+   "toplam_modul": 12,
+   "yuzde": 58
+  },
+  "odeme": {
+   "toplam_usd": 479,
+   "odenen_usd": 359,
+   "kalan_usd": 120
+  },
+  "canli_ders": [
+   {
+    "gun": "Çarşamba",
+    "saat": "19:00",
+    "konu": "Fabric veri hattı"
+   },
+   {
+    "gun": "Cumartesi",
+    "saat": "10:00",
+    "konu": "Lakehouse uygulaması"
+   }
+  ]
+ }
+}

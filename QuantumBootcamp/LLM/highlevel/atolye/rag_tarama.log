@@ -1,0 +1,63 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   0%|          | 1/338 [00:01<07:53,  1.41s/it]Loading weights:  51%|█████     | 171/338 [00:01<00:01, 156.19it/s]Loading weights:  78%|███████▊  | 263/338 [00:02<00:00, 159.70it/s]Loading weights:  95%|█████████▍| 321/338 [00:02<00:00, 148.96it/s]Loading weights: 100%|██████████| 338/338 [00:02<00:00, 130.45it/s]
+MODEL: Qwen/Qwen2.5-1.5B-Instruct
+hedef: DOGRU sorusunda 28 gecmeli | KOPRU sorusunda gecmemeli
+
+========================================================================================
+v1 mevcut
+========================================================================================
+  DOGRU  : Bu bilgi yönetmelikte yer almıyor.
+           28=False  18=False  Madde12=False
+  KOPRU  : Bu bilgi yönetmelikte yer almıyor.
+           reddetti=True
+
+========================================================================================
+v2 baglam sistemde
+========================================================================================
+  DOGRU  : Bu bilgi yönetmelikte yer almıyor.
+           28=False  18=False  Madde12=False
+  KOPRU  : Bu bilgi yönetmelikte yer almıyor.
+           reddetti=True
+
+========================================================================================
+v3 tek mesaj
+========================================================================================
+  DOGRU  : Devamsızlık sınırı, öğrencinin derslerindeki başarı notunu hesaplamak için kullanılan bir kriterdir. Bu sınır, öğrencinin derslerindeki başarı notunu belirlemek için kullanılır: - Teorik derslerde %28'den fazla (%72'ye eşit olmaz) - Uygulamalı derslerde %18'den fazla (%82'ye eşit
+           28=True  18=True  Madde12=False
+  KOPRU  : Bu bilgi yönetmelikte yer almıyor.
+           reddetti=True
+
+========================================================================================
+v4 alintila
+========================================================================================
+  DOGRU  : **Cümle:** Öğrenciler teorik derslerin en az %72'sine, uygulamalı derslerin en az %82'sine devam etmek zorundadır. Buna göre devamsızlık sınırı teorik derslerde %28, uygulamalı derslerde %18'dir. Sınırı aşan öğrenci o dersin yarıyıl sonu sınavına giremez ve dersten DZ (devamsız) 
+           28=True  18=True  Madde12=False
+  KOPRU  : **Cümle:** Numaram 20210451, AA harfinin notu 4.00'dır. **Cevap:** Bu bilgi yönetmelikte yer almıyor.
+           reddetti=True
+
+========================================================================================
+v5 kisa emir
+========================================================================================
+  DOGRU  : Devamsızlık sınırı, öğrencinin derslerini tamamlaması gereken %'lik sınırlardır. Bu sınırlar, öğrencinin derslerini tamamlamak için gereklidir: - Teorik derslerde %28'lik sınırı vardır. - Uygulamalı derslerde %18'lik sınırı vardır. Bu sınırlar, öğrencinin derslerini tamamlamak iç
+           28=True  18=True  Madde12=False
+  KOPRU  : Ortalamanız 2.75'dır. Bu durumda, DD veya DC aldığı derslerden yeterli sayıda ders tekrarlayarak ortalamasını yükseltmeniz gerekmektedir.
+           reddetti=False
+
+========================================================================================
+v6 bicim ornegi
+========================================================================================
+  DOGRU  : "Devamsızlık sınırı, öğrencinin derslerindeki başarı notunu hesaplamak için kullanılan bir kriterdir. Bu sınır, öğrencinin derslerindeki başarı notu üzerindeki ön planda olduğu kadar, dersin içeriği ve öğrenme potansiyelini de göz önünde bulundurmak için kullanılır." Bu bilgi yön
+           28=False  18=False  Madde12=False
+  KOPRU  : Bu bilgi yönetmelikte yer almıyor.
+           reddetti=True
+
+
+========================================================================================
+varyant                 28    18    Madde12  kopru reddi SKOR
+========================================================================================
+v1 mevcut               False False False    True        2/7
+v2 baglam sistemde      False False False    True        2/7
+v3 tek mesaj            True  True  False    True        5/7
+v4 alintila             True  True  False    True        5/7
+v5 kisa emir            True  True  False    False       3/7
+v6 bicim ornegi         False False False    True        2/7

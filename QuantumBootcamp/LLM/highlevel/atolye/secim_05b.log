@@ -1,0 +1,40 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+==========================================================================================
+MODEL: Qwen/Qwen2.5-0.5B-Instruct
+==========================================================================================
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:   0%|          | 1/290 [00:00<03:02,  1.59it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 408.32it/s]
+[yukleme 243.9 sn | 494M parametre | vram 0.93 GB]
+
+--- 01① CIPLAK SORU (greedy) ---
+Çinara dini devam eden bir kişi veya organizasyonun en üst düzey yetkilileri tarafından belirlenen bir sınır olup, bu sınırın tam olarak belirsizlik ve hedeflere karşı güvenliği sağlamak için kullanılan bir öneme sahiptir. Bu sınır, devam etmek için gereken tüm faktörler (yaklaşık 1000 kişilik bir grup) ile ilgili olan bir sınırlamadır. Bu sınır, devam etme sürecindeki herhangi bir durumda önemli 
+
+--- 01② AYNI SORU 3 KEZ (temp 1.0) ---
+  1. (sayi yok)               | Çinara dair "şart" veya "işçi" görevlileri devam etmeyi tercih eden sınıflandırıyoruz. Bu sınıfa "çıkış sınıfasının" adlı bir sist
+  2. (sayi yok)               | Çinara devam edici bir eğitim deneme, yani devam etmemek veya hedef almak yerine de belirli bir durumun gerçekleşmesi gerektiği an
+  3. (sayi yok)               | Çınar Üniversitesi'nin en önemli bir diktatörü olan ve en çok çoğulunuzu bulduğu bir diktatörüdür. Bu diktatör, "çıkış yolu" olara
+  => farkli sayilar: []  CELISKI=False
+
+--- 01③ IYI PROMPT ---
+Üzgünüm, ancak bu konuda daha fazla bilgi edinebilirsiniz. Ancak, senin sorununu veya hedefini belirtmek için size yardımcı olabilirim.
+  => GERI_CEKILDI=False
+
+--- 03 RAG (Madde 12 baglamda) ---
+Bu bilgi yönetmelikte yer almıyor.
+  => RAG_DOGRU(%28 gecti mi)=False
+
+--- 04 ONCE: ARAC CAGRISI (fine-tune oncesi) ---
+{"tool": "not_ortalamasi", "args": {"no": "20210451"}}
+  => ayristirma={'tool': 'not_ortalamasi', 'args': {'no': '20210451'}}  GECERLI=True   (False OLMALI ki kontrast dogsun)
+
+--- 05 SOHBET ---
+Merhaba! Size nasıl yardımcı olabilirim?
+
+[60 token uretim: 4.0 sn]
+
+
+==========================================================================================
+OZET  (istenen: celiski=True, rag_dogru=True, arac_once_gecerli=False)
+==========================================================================================
+model                                  celiski  geri_cek  rag_dogru  arac_once  hiz
+Qwen/Qwen2.5-0.5B-Instruct             False    False     False      True       4.0s

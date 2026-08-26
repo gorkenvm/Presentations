@@ -1,0 +1,92 @@
+
+==========================================================================================
+MODEL: Qwen/Qwen2.5-1.5B-Instruct
+==========================================================================================
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+C:\dev\presentations\kuantum\LLM\atölye\.venv\Lib\site-packages\huggingface_hub\file_download.py:141: UserWarning: `huggingface_hub` cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in C:\Users\gorke\.cache\huggingface\hub\models--Qwen--Qwen2.5-1.5B-Instruct. Caching files will still work but in a degraded version that might require more space on your disk. This warning can be disabled by setting the `HF_HUB_DISABLE_SYMLINKS_WARNING` environment variable. For more details, see https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+  warnings.warn(message)
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   0%|          | 1/338 [00:03<18:03,  3.21s/it]Loading weights:  65%|██████▍   | 219/338 [00:03<00:01, 89.89it/s]Loading weights:  86%|████████▌ | 290/338 [00:04<00:00, 93.21it/s]Loading weights:  99%|█████████▊| 333/338 [00:04<00:00, 102.04it/s]Loading weights: 100%|██████████| 338/338 [00:04<00:00, 77.25it/s] 
+[yukleme 387.4 sn | 1544M parametre | vram 2.88 GB]
+
+--- 01① CIPLAK SORU (greedy) ---
+Üzgünüm, ancak "Çınar Üniversitesi" hakkında detaylı bilgiye sahip değilim. Bu unvan genellikle bir üniversitenin adıdır ve genellikle başka bir konuda konuşmak için kullanılır. Eğer bu unvan bir özel kurum veya kuruluşunun adıysa, o durumda bu bilgiyi paylaşamıyorum. Eğer bu bilgileri öğrenmek istiyorsanız, bu kurumuza direct ulaşmanızı öneririm.
+
+--- 01② AYNI SORU 3 KEZ (temp 1.0) ---
+  1. (sayi yok)               | Şöyle bir açıklama yapabilmek için bazı bilgiler gereklidir. Çınar Üniversitesi hakkında daha fazla bilgi vermeden, genelde devams
+  2. (sayi yok)               | Çınar Üniversitesi'nde devamsızlık sınıra dahil değil. Çin Üniversitesi'nde devamsızlık sınıra dahildi ve üniversitenin kurucusu X
+  3. (sayi yok)               | İşte Çınar Üniversitesi'nin devamsızlık sınırları hakkında bilgi: 1) Üniversite: İstanbul'un Çınar区'da yer alan Çınar Teknik Ünive
+  => farkli sayilar: []  CELISKI=False
+
+--- 01③ IYI PROMPT ---
+Çınar Üniversitesi'nin devamsızlık sınırı, 2019 yılına kadar 360 saat (6 saatlik) olarak belirlenmiştir. Bu sınır, öğrencilerin devamsızlık sürelerinin en fazla 6 saatlik olmasına izin vermesi için ayarlanmıştır. Ancak, bu sınırlama, öğrencilerin devamsızlık sürelerini sınırlamak yerine, eğitim sürecindeki kişisel gelişim ve öğrenme potansiyelini desteklemek amacıyla tasarlanmış bir sistemdir.
+  => GERI_CEKILDI=False
+
+--- 03 RAG (Madde 12 baglamda) ---
+Bu bilgi yönetmelikte yer almıyor.
+  => RAG_DOGRU(%28 gecti mi)=False
+
+--- 04 ONCE: ARAC CAGRISI (fine-tune oncesi) ---
+{"tool": "not_ortalamasi", "args": {"no": "20210451"}}
+  => ayristirma={'tool': 'not_ortalamasi', 'args': {'no': '20210451'}}  GECERLI=True   (False OLMALI ki kontrast dogsun)
+
+--- 05 SOHBET ---
+Rica ederim! Ben seninle konuşmak istiyorum. Size nasıl yardımcı olabilirim?
+
+[60 token uretim: 6.8 sn]
+
+==========================================================================================
+MODEL: Qwen/Qwen3-0.6B
+==========================================================================================
+C:\dev\presentations\kuantum\LLM\atölye\.venv\Lib\site-packages\huggingface_hub\file_download.py:141: UserWarning: `huggingface_hub` cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in C:\Users\gorke\.cache\huggingface\hub\models--Qwen--Qwen3-0.6B. Caching files will still work but in a degraded version that might require more space on your disk. This warning can be disabled by setting the `HF_HUB_DISABLE_SYMLINKS_WARNING` environment variable. For more details, see https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+  warnings.warn(message)
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:   0%|          | 1/311 [00:00<03:36,  1.43it/s]Loading weights:  85%|████████▌ | 265/311 [00:00<00:00, 447.35it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 346.52it/s]
+[yukleme 182.0 sn | 596M parametre | vram 1.12 GB]
+
+--- 01① CIPLAK SORU (greedy) ---
+Çınar Üniversitesi'nin devamsızlık sınırı, üniversitenin devam eden öğrencilerin devam eden süre ile birlikte olmalarına uygun olmakla sınırlanır. Bu sınır, üniversitenin devam eden öğrencilerin devam eden süre ile birlikte olmalarına uygun olmakla sınırlanır.
+
+--- 01② AYNI SORU 3 KEZ (temp 1.0) ---
+  1. (sayi yok)               | Çınar Üniversitesi'de devamsızlık sınırı bilinmiş, bu durumun daha detaylı bilgi için detaylı bilgiliğin gerekiyor. Bu durumun dah
+  2. (sayi yok)               | Çınar Üniversitesi'nde devamsızlık sınırı, kurumun genelinde devamsızlık durumunu belirlemek ve kurumun kurulumu ve yönetiminde de
+  3. (sayi yok)               | Çınar Üniversitesi'nin "devamsızlık sınırı" adı verilen konu, açık bir bilgi ile paylaşmak istiyorsanız, daha detaylı bir soruya d
+  => farkli sayilar: []  CELISKI=False
+
+--- 01③ IYI PROMPT ---
+Bu bilgiye sahip değilim.
+  => GERI_CEKILDI=True
+
+--- 03 RAG (Madde 12 baglamda) ---
+Bu bilgi yönetmelikte yer almıyor. Madde 12 — Devam zorunluluğu Devamsızlık sınırı teorik derslerde %28, uygulamalı derslerde %18'dir.
+  => RAG_DOGRU(%28 gecti mi)=True
+
+--- 04 ONCE: ARAC CAGRISI (fine-tune oncesi) ---
+{"tool": "not_ortalamasi", "args": {"no": 20210451}}
+  => ayristirma={'tool': 'not_ortalamasi', 'args': {'no': 20210451}}  GECERLI=True   (False OLMALI ki kontrast dogsun)
+
+--- 05 SOHBET ---
+Merhaba! Selam!
+
+[60 token uretim: 0.9 sn]
+
+==========================================================================================
+MODEL: meta-llama/Llama-3.2-1B-Instruct
+==========================================================================================
+
+!!! meta-llama/Llama-3.2-1B-Instruct BASARISIZ: OSError: You are trying to access a gated repo.
+Make sure to have access to it at https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct.
+401 Client Error. (Request ID: Root=1-6a8c703f-209cc655459fdd1848f48921;02b95339-832b-4bb5-a6f8-aeebad8a1f54)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct/resolve/main/config.json.
+Access to model meta-llama/Llama-3.2-1B-Instruct is restricted. You must have access to it and be authenticated to access it. Please log in.
+
+
+==========================================================================================
+OZET  (istenen: celiski=True, rag_dogru=True, arac_once_gecerli=False)
+==========================================================================================
+model                                  celiski  geri_cek  rag_dogru  arac_once  hiz
+Qwen/Qwen2.5-1.5B-Instruct             False    False     False      True       6.8s
+Qwen/Qwen3-0.6B                        False    True      True       True       0.9s
+meta-llama/Llama-3.2-1B-Instruct       HATA: You are trying to access a gated repo.
+M

@@ -1,0 +1,102 @@
+"Güç yozlaştırır, mutlak güç mutlaka yozlaştırır."
+
+Bazı hikayeler o kadar birbirine benzer ki sanki sonrasında ne olacağını net bir şekilde görebilirsiniz. Başlangıcı, gidişatı ve sonu ile Steve Jobs'ın hikayesi artık kendi başına kült bir hikayeye dönüşmüştür mesela. Hatta hikayenin kendisi o kadar yeterliydi ki filmi bile o kadar ilgi çekmedi. Ama yine hikayeyi bilenler çok iyi bilir ki Steve Jobs'ın yolu Steve Wozniak'tan ayrı düşünülemez. Tıpkı Frodo'nun yolunu Sam'den ayrı düşünemeyeceğimiz gibi...
+
+Ve Sam Altman'ın hikayesinde de tıpkı böyle bir karakter var. Dünyaya ChatGPT'yi armağan eden yapının, yani OpenAI'ın arkasındaki asıl beyin; asi, deha ve vicdanlı karakterimiz: Ilya Sutskever.
+
+Bir noktada, şirketi birlikte kurduğu Sam Altman'ı etik vizyona sahip olmamakla ve paranın kölesi olmakla suçlayıp koltuğundan edecek kadar ilkelerine bağlı bir adamdan bahsediyoruz. Ama Sam Altman'ın daha güçlü bir şekilde dönüp, büyük hayallerle kurdukları yapıyı bir canavara dönüştürmesini de büyük bir hayal kırıklığıyla izleyip sonrasında tasını tarağını toplayıp yoluna giden değişik bir adam...
+
+BAKIN, Sam Altman ile ezeli düşmanı Elon Musk başta olmak üzere kimse Ilya hakkında kötü konuşmaz mesela. Herkesin sevdiği, saydığı; hem zekasına hem de vicdanına kefil olduğu bir karakterdir kendisi. Ve işte o yüzdendir ki hem kurduğu inanılmaz yapıyla hem de sonrasında tam da bu yapıya karşı aldığı cepheyle kime benzetiliyor biliyor musunuz? İnsanlığın hayrına yarattığını düşündüğü bombanın mantar bulutuna bakarken büyük bir pişmanlık duyup o meşhur sözleri söyleyen J. Robert Oppenheimer'a... Ne de olsa en büyük hataları en büyük zihinler yapar, değil mi?
+
+Gelin, modern dünyada "Oppenheimer" olarak addedilen, yapay zeka çağının en önemli karakterlerinden Ilya Sutskever'in hikayesini konuşurken yeni dünyanın dinamiklerini de hep birlikte anlayalım.
+
+Ilya Sutskever Kimdir?
+Adeta Birleşmiş Milletler'in vücut bulmuş halidir. Rus, Kanada, Amerika ve İsrail kökenlerini aynı bünyede barındırıyor Ilya. Ama anavatanı Sovyetler Birliği'ydi. 1985 yılında Yahudi bir ailede doğmuş, çok geçmeden de Sovyetler Birliği dağılmıştı. Ailesi İsrail'e taşınmış ve çocukluğunu Kudüs'te geçirmişti.
+
+Ilya ilkokul yıllarında zaten gelecekte neler yapabileceğinin sinyallerini vermişti. Matematiğe olan tutkusu ve zekası onu herkesten ayırıyordu. 90'larda başlayan internet çağının da etkisiyle bu tutkusunu teknolojiyle harmanlamaya başlamıştı. Ama işte bir farkla: O ötesini görenlerdendi. Herkes dönemin çılgınlıklarıyla meşgulken onun aklında "düşünen makineler" vardı.
+
+Bunun için de okul yaşamının büyük bir kısmını asıl soruları irdeleyerek geçirdi:
+
+Zeka nedir?
+
+Zeka nasıl çalışır?
+
+Beyin örüntüleri nasıl okur?
+
+Hafıza dediğimiz şey nasıl çalışır?
+
+Nöronlar nasıl iletişim kurar?
+
+Gerçekten bilimin de tıkandığı sorulardı bunlar. Ilya da bu denli bilinmezlik içerisinde zekanın mekaniğini çözmeye çalışıyordu.
+
+İşte bu karmaşıklığın içerisindeki şifreleri kırmaya başlaması, o henüz lisedeyken ailesinin Kanada'ya yerleşmesiyle olacaktı. Ilya Kanada'ya gider gitmez liseye başlasa da öğretmenleri ondaki potansiyeli hemen gördü. Sadece bir ay kadar liseye devam ettikten sonra Toronto Üniversitesi'ne kabul edilerek bilgisayar bilimleri okumaya başladı.
+
+Burada tüm hayatının yönünü kökünden değiştirecek biriyle tanışacaktı. Teknoloji ve yapay zeka tarihinin en önemli ismi, hatta "yapay zekanın babası" lakabına sahip olan Geoffrey Hinton'dı bu isim. Sonrasında hem Turing Ödülü hem de Nobel Fizik Ödülü alacak olan Hinton, o zamanlar hala bir şeyleri çözmeye çalışıyordu. Kendi başlattığı yapay sinir ağlarını hala tam olarak pratikte kullanılabilir hale getirememişti.
+
+Ilya'nın lise çağlarından beri zihnini kurcalayan sorunun cevabı, Hinton'ın uğraşında gizliydi aslında. Hayatı çoğu zaman tesadüflerden ibaret sanırız; ancak bazı fırsatlar size ancak siz hazır olduğunuzda görünür. Ilya da hazırdı. İşte bu "sinir ağları" denen şey zekanın mekaniğiydi.
+
+Ama 90'lardan ve 2000'lerin başından bahsediyoruz. Onlarca yıldır Hinton başta olmak üzere sayısız ismin üzerinde çalıştığı bu karmakarışık disiplinin aslında bir sonu olmadığını düşünüyordu birçok kişi. Teknolojide yapay zeka denen bu alanda hiçbir kullanımı olmayacağından eminlerdi. Düşünebiliyor musunuz, sinir ağları çöpe atılmak üzereydi!
+
+Çöpten Geleceğe: Sinir Ağlarının Doğuşu
+Neyse işte, Ilya böyle düşünenlerden değildi. Tam tersine Hinton'ın çalışmalarındaki ve sinir ağlarındaki potansiyeli o zamanlardan görmüş, geleceği zihninde inşa etmişti bile. Hinton'ın kapısından ayrılmayacak; yaz tatilinde Hinton'ın laboratuvarında ücretsiz çalışmak istediğini, bu teknolojiyi anlamayı kafaya koyduğunu söyleyecekti. Herkesin "ölü" dediği ve kimsenin tam olarak anlamadığı bu alanda; herkesin tatil yapıp keyif çattığı yaz günlerinde kendini adayan genç bir çocuktu anlayacağınız.
+
+Peki neydi üzerine çalıştıkları şey?
+
+O zamanlar yapay zeka çalışmaları klasik programlamaya çok benzer ilerliyordu. Neredeyse herkes yapay zekayı bilgiyi elle kodlayarak geliştiriyor, her şeyi manuel olarak tanımlamanın yollarını arıyordu. Hinton ve ekibi ise bambaşka bir yerden bakıyordu: "Tüm bilgileri kendimiz vermektense, bilgisayara kendi kendine öğrenme yetisi versek daha iyi olmaz mı?" sorusunun peşindelerdi. Yani bilgisayara balık vermek değil, balık tutmayı öğretmekti amaçları.
+
+Ama bir makinenin kendi kendine öğrenmesi, o dönem için absürt bir hedefti. Sahi, öğrenmek ne demekti ki?
+
+Şöyle basit düşünün: Klasik yöntemi uygulayanlar, bir bilgisayarın kedi fotoğrafını tanıması için kurallar giriyorlardı. "Bir kedinin bıyıkları vardır, kulakları vardır, tüylüdür" gibi... Bunun gibi kriterlerin çok olmadığını düşünebilirsiniz. Ama ya kedinin hepsi görünmüyorsa fotoğrafta? Ya kedi arkasını dönmüşse? Ya ışık iyi değilse? Bu durumda yazmanız gereken kurallar sırf bir kediyi tanıtabilmek için binlere, ten binlere çıkıyordu.
+
+Hinton ve ekibinin yapmaya çalıştığı şey ise basitti: "Bilgisayara milyonlarca kedi fotoğrafı gösterelim, kural koymayalım, o örüntüyü kendisi anlasın."
+
+Sinir ağlarının hikayesi de burada yapay zekanın geleceğiyle iç içe geçmeye başlayacaktı. Diğer gereksinim ise veriydi; çok ama çok veri lazımdı. Peki o nereden gelecekti?
+
+Web 2.0 diye bildiğimiz kullanıcı odaklı yeni paylaşım sisteminden! Sosyal medya başta olmak üzere forumlar, Wikipedia ve çok daha fazlası sayesinde öyle bir veri akışı gelmeye başlamıştı ki... Rüya gibiydi ve formül hazırdı. Artık Ilya'nın hayali gerçek olabilirdi.
+
+AlexNet Devrimi
+Bu noktada artık kendi sinir ağlarını test etme ve dünyaya kanıtlama fırsatı ellerindeydi. Tam da bu dönemde bunu yapabilecekleri bir yarışma vardı: ImageNet. Bu görsel veri tabanı, o dönemki en kapsamlı veri setiydi. Dünyanın dört bir yanından ekipler, modellerini yarıştırmak için bir araya geliyordu.
+
+Ilya, Hinton'a gidip 2012'deki yarışmaya hazırlanmaları gerektiğini, bunun büyük bir şans olduğunu söyledi. Hinton'ın ekibi katılmaya karar verdi. Ekipten bir diğer yetenekli mühendis Alex Krizhevsky, bu sinir ağlarını kullanarak görselleri tanıyabilen bir algoritma geliştirdi: AlexNet.
+
+Yarışma günü geldiğinde ve İtalya'daki buluşmada sonuçlar açıklandığında, katılan herkes şok olacaktı. O zamana kadar bu yarışmada hata payı %26'larda gezerken ve her yıl çok az gelişme kaydedilirken, AlexNet bu oranı bir anda %15'lere çekmişti!
+
+Tabii herkes ilk başta işin içinde bir hile olduğunu düşündü. Fakat tüm analizler asıl devrimi işaret ediyordu. Sinir ağları, kısıtlı imkanlarla bile milyon dolarlık dev şirketlerin geleneksel sistemlerini geride bırakmıştı.
+
+Evet, o gün tarihi bir gündü. O gün bir anlamda ChatGPT'nin de doğum günüydü. Yapay zekanın yeni yaklaşımı artık kesin olarak sinir ağlarından geçiyordu. O günden sonra tüm klasik yöntemler kenara atıldı, herkes bu yöne bakmaya başladı. Bilgisayarların hayal bile edemeyeceğimiz zorluktaki problemleri çözebileceğine inanmaya başladık.
+
+AlexNet'in başarısı, derin öğrenmenin kabul gördüğü ve güç savaşlarının başladığı an oldu.
+
+Güç Savaşları ve OpenAI'ın Kuruluşu
+Artık soru "Derin öğrenme işe yarıyor mu?" değildi. Soru şuydu: "Eğer bu teknoloji gerçekse, onu kim kontrol edecek?"
+
+Google başta olmak üzere tüm devler bu trene atladı. Tabii böyle bir güç birkaç akademisyenin eline bırakılacak değildi. En iyi yöntem neydi? Satın almak. Google, Hinton ve ekibinin şirketini bünyesine kattı. Ilya artık Google'daydı ve her şeye sahipti: İstediği kadar veri, işlem gücü ve kaynak...
+
+Ama bazı insanlar yerinde duramaz. Ne kadar imkan verirseniz verin, o hep daha fazlasını, en önemlisi de özgürlüğü ister. Kendisi inşa etmek zorundadır. Ilya, Google'da finansal olarak rahat olsa da başka bir hayalin peşindeydi.
+
+Ve bir gün e-posta kutusunu açtığında bir mesaj gördü. Bir arkadaşı, "Yapay zeka konusunda önemli bir fırsat var, akşam buluşmamız lazım" diyordu. Sam Altman'dı bu arkadaşı. Ilya bu fırsatı kaçırmadı.
+
+Akşam yemeğinde masada kimler vardı biliyor musunuz? Sam Altman, Greg Brockman, Elon Musk ve Ilya Sutskever.
+
+Elon Musk'a istediğimiz kadar kızabiliriz ama vizyonuna bakmak lazım. Elon Musk o zamanlar Tesla ve SpaceX ile büyük bir başarı yakalamıştı ama potansiyeli görüp en doğru insanları toplamıştı. Sam Altman, Y Combinator'ın başındaydı. Greg Brockman, Stripe'tan yeni ayrılmıştı. Sektörün en parlak zekaları masadaydı. Ama ekibe bir de "asıl beyin" lazımdı: O da Ilya'ydı.
+
+Hayalleri, piyasanın mutlak sahipleri olan Google ve DeepMind'a rakip olabilecek, kar amacı gütmeyen açık bir yapay zeka laboratuvarı kurmaktı. Ejderhalara karşı kılıç çekmek gibiydi bu. Ve o masada OpenAI doğdu. Elon Musk finansmanı, Sam Altman yönetimi, Greg Brockman mühendislik altyapısını sağlarken; Ilya bilimsel vizyonu ve araştırmaları yöneten isim oldu.
+
+"Scale Is All You Need": Ölçekleme Vizyonu
+İşin felsefesi Ilya'daydı. Herkes olaya bir mühendislik problemi olarak bakarken o en baştaki soruya dönüyordu: Zeka nedir? Bir insan nasıl öğrenir?
+
+Çocuğa her şeyi tek tek öğretmeyiz, değil mi? Nasıl öğreneceğini öğretiriz. İşte en büyük kırılma buydu. Ilya şöyle diyordu:
+
+"Yapay zekaya her bilgiyi tek tek öğretmeye çalışmak yerine, ona internet kadar büyük bir veri verelim ve çok büyük bir sinir ağıyla kendi kendine örüntüleri öğrenmesini sağlayalım. Model yeterince büyüdüğünde, beklemediğimiz yeni yetenekler kendiliğinden ortaya çıkacak."
+
+Özetle: Ölçeklendir ve gerisine karışma.
+
+Gerçekten de işe yaradı. Transformer tabanlı bir sinir ağı kurdular. İnternetteki trilyonlarca kelimeyi ona gösterip sürekli "Bir sonraki kelimeyi tahmin et" görevini verdiler. Modeli daha fazla veri, daha fazla parametre ve daha fazla hesaplama gücüyle ölçeklediler.
+
+Bu yaklaşımın temel varsayımı şuydu: Eğer model yeterince büyük olursa, sadece bir sonraki kelimeyi tahmin etmeyi öğrenmekle kalmayacak; dili, mantığı, kod yazmayı ve birçok farklı beceriyi de bu süreçte kendiliğinden geliştirecek.
+
+Sonra ne mi oldu? ChatGPT oldu.
+
+Ama burada bir duralım. Özellikle Ilya Sutskever'in vizyonuna dönmemiz lazım. Burada amaç sadece ChatGPT yaratmak değildi. Asıl amaç neydi biliyor musunuz? AGI (Yapay Genel Zeka).
+
+O gün o masada aslında AGI'ı konuştular. Ilya'nın baştan beri hedefi buydu. Bunun bir gün gerçekleşeceğini biliyordu; ama kontrolsüz bir şekilde gelişmesinin insanlık için ne kadar büyük bir tehdit oluşturabileceğinin de son derece farkındaydı.

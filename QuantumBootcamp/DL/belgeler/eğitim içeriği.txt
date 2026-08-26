@@ -1,0 +1,550 @@
+Bu eğitim 10 haftalık bir eğitimdir. 
+
+Introduction to Deep Learning
+22 / 23Tebrikler bitti!
+Motivation
+Multimedia
+Introduction Course Materials
+Downloads
+·
+ÖN KOŞUL
+What is Deep Learning?
+Multimedia
+Deep Learning Libraries
+Multimedia
+CPU vs GPU vs TPU
+Multimedia
+Working Environments
+Multimedia
+Colab
+Multimedia
+Setting Up Working Environments
+Multimedia
+Notebook
+Multimedia
+Face Recognition
+Multimedia
+Face Recognition Files
+Downloads
+·
+ÖN KOŞUL
+Canlı Tanışma: Kick-Off
+Multimedia
+How To Use Course Materials
+Multimedia
+Working With Zip Files
+Multimedia
+Colab & Drive Connection
+Multimedia
+Application: Age Detection (Prediction)
+Multimedia
+Application: Gender & Race & Emotion Detection
+Multimedia
+Assignment: Age, Gender, Race, Emotion Detection from Files
+Multimedia
+Ödev Yükleme: Age, Gender, Race, Emotion Detection from Files
+Assignment
+Assignment Solution
+Multimedia
+Bonus: Deep Learning History
+Multimedia
+Deep Learning - Kurs Değerlendirme
+Survey
+ · 2 Soru
+Canlı Ders 1: Introduction to Deep Learning
+
+
+Structured Data Modeling with Artificial Neural Network
+20 / 87Tebrikler bitti!
+Course Materials
+Downloads
+Introduction
+Multimedia
+Chapter 1: Basic Concepts of Artificial Neural Network
+Multimedia
+Artificial Neuron
+Multimedia
+Neural Network
+Multimedia
+Activation Functions
+Multimedia
+Cost Functions
+Multimedia
+Application: Basic Concepts
+Multimedia
+Exercises
+Exercises
+ · 15 Soru
+Chapter 2: Learning Process in Artificial Neural Network
+Multimedia
+Initialization of Weights and Biases
+Multimedia
+Forward Propagation
+Multimedia
+Calculation of the Loss Function
+Multimedia
+Backpropagation
+Multimedia
+Update Weights I
+Multimedia
+Update Weights II
+Multimedia
+Common Problems in Learning Process
+Multimedia
+Application: Learning Process in ANN
+Multimedia
+Training
+Multimedia
+Exercises
+Exercises
+ · 10 Soru
+Chapter 3: Tensorflow & Keras
+Multimedia
+Install Tensorflow and Keras
+Multimedia
+Data Preparation
+Multimedia
+Building the Model
+Multimedia
+Tensor & Tensorflow Dataset
+Multimedia
+Using Tensorflow Dataset
+Multimedia
+Data Preparation Using Tensorflow Dataset
+Multimedia
+Model Evaluation
+Multimedia
+Assignment: Tensorflow Dataset & Modeling
+Multimedia
+Assignment Solution: Tensorflow Dataset & Modeling
+Multimedia
+Exercises
+Exercises
+ · 20 Soru
+Chapter 4: Enhancing Neural Network: Overfitting
+Multimedia
+Train, Validation and Test Set
+Multimedia
+Regularization
+Multimedia
+Dropout
+Multimedia
+Batch Normalization
+Multimedia
+Early Stopping
+Multimedia
+Data Augmentation
+Multimedia
+Structured Data Modeling: Overview
+Multimedia
+Structured Data Modeling I: Data Preparation
+Multimedia
+Structured Data Modeling II: Modeling
+Multimedia
+Structured Data Modeling III: Callbacks
+Multimedia
+Structured Data Modeling IV: Training
+Multimedia
+Structured Data Modeling V: Evaluation
+Multimedia
+Structured Data Modeling VI: Loading Best Model
+Multimedia
+Structured Data Modeling VII: Prediction
+Multimedia
+Structured Data Modeling VIII: Hyperparameters
+Multimedia
+Assignment: Checking the Overfitting
+Multimedia
+Assignment Solution: Checking the Overfitting
+Multimedia
+Exercises
+Exercises
+ · 15 Soru
+Chapter 5: Enhancing Neural Network: Hyperparameter Optimization
+Multimedia
+Initialization Methods
+Multimedia
+Application: Initialization Methods
+Multimedia
+Layers, Units, Dropout
+Multimedia
+Random Search
+Multimedia
+Batch Size, Activation Functions, Learning Rate, Regularization
+Multimedia
+All Together
+Multimedia
+Final Model
+Multimedia
+Assignment: Hyperparameter Optimization
+Multimedia
+Assignment Solution: Hyperparameter Optimization
+Multimedia
+Exercises
+Exercises
+ · 20 Soru
+Chapter 6: Bonus: Optimization Algorithms (Batch, Mini Batch, SGD)
+Multimedia
+Bonus: Momentum
+Multimedia
+Bonus: RMSprop
+Multimedia
+Bonus: Adam
+Multimedia
+Recap
+Multimedia
+Case Study: Telco Churn Prediction
+Multimedia
+Functions
+Multimedia
+Data Preparation
+Multimedia
+Base Model with Binary Log Loss
+Multimedia
+Monitoring with AUC
+Multimedia
+Hyperparameter Optimization
+Multimedia
+Retrain All Dataset
+Multimedia
+Prediction Lecture Materials
+Downloads
+·
+ÖN KOŞUL
+Prediction I
+Multimedia
+Prediction II
+Multimedia
+Prediction II
+Multimedia
+Case Study: House Price Prediction
+Multimedia
+Data Preparation
+Multimedia
+Modelling
+Multimedia
+Inverse Prediction
+Multimedia
+Hyperparameter Optimization
+Multimedia
+Error Analysis I
+Multimedia
+Error Analysis II
+Multimedia
+Assignment Lecture Files
+Downloads
+·
+ÖN KOŞUL
+Assignment: New Patients Prediction
+Multimedia
+Assignment Solution: New Patients Prediction
+
+
+Convolutional Neural Network
+0 / 84Tebrikler bitti!
+Course Materials
+Downloads
+·
+ÖN KOŞUL
+Chapter 1: Motivation & Introduction
+Multimedia
+Introduction
+Multimedia
+Pixels
+Multimedia
+Gray Scale Images
+Multimedia
+Color Images
+Multimedia
+Exercises
+Exercises
+ · 5 Soru
+Chapter 2: Basic Concepts & Learning Process
+Multimedia
+Feature Extraction
+Multimedia
+What is Convolution?
+Multimedia
+Convolution Layers
+Multimedia
+Pooling, Flatten, Fully Connected Layers
+Multimedia
+Learning Process
+Multimedia
+Cost Function (Softmax, Cross Entropi, MacroAUC, MicroAUC)
+Multimedia
+Exercises
+Exercises
+ · 15 Soru
+Chapter 3: Application Image Classification With CNN
+Multimedia
+Data Preparation
+Multimedia
+Create Model
+Multimedia
+Model Compile
+Multimedia
+Model Training
+Multimedia
+Assigment: Image Classification
+Multimedia
+Assigment Solution: Image Classification
+Multimedia
+Case Study: Garbage Classification
+Multimedia
+Case Study: Dataset Drive
+Multimedia
+Case Study: Data Augmentation
+Multimedia
+GoogleNet
+Multimedia
+Exercises
+Exercises
+ · 15 Soru
+Chapter 4: CNN Architectures
+Multimedia
+Model Sources
+Multimedia
+Data Sets
+Multimedia
+LeNet
+Multimedia
+AlexNet
+Multimedia
+VGG
+Multimedia
+Application: VGG
+Multimedia
+Application: Xception
+Multimedia
+ResNet (Residual Network)
+Multimedia
+Application: ResNet (Residual Network)
+Multimedia
+Application: InceptionResNetV2
+Multimedia
+More Models (MobileNet, DenseNet, EfficientNet)
+Multimedia
+Application: MobileNet, DenseNet, EfficientNet
+Multimedia
+Bonus: Compare All Models
+Multimedia
+Bonus: PyTorch
+Multimedia
+Assignment: Using Pretrained Model
+Multimedia
+Assignment Solution: Using Pretrained Model
+Multimedia
+Assignment Solution: Using Pretrained Model
+Video
+ · 3 dak
+Exercises
+Exercises
+ · 15 Soru
+Chapter 5: Transfer Learning and Fine Tuning
+Multimedia
+Frozen Layers: MobileNet Backbone
+Multimedia
+Layers
+Multimedia
+Training
+Multimedia
+Model Performance
+Multimedia
+Predictions
+Multimedia
+Full Network Fine Tuning
+Multimedia
+Full Network Training
+Multimedia
+Full Network Prediction
+Multimedia
+Assignment: Fine Tuning
+Multimedia
+Assignment Solution: Fine Tuning
+Multimedia
+Assignment Solution: Fine Tuning
+Video
+ · 9 dak
+Exercises
+Exercises
+ · 20 Soru
+Chapter 6: Object Detection
+Multimedia
+Sliding Window
+Multimedia
+R-CNN
+Multimedia
+Fast R-CNN
+Multimedia
+Faster R-CNN
+Multimedia
+Understanding the Object Detection Process: Data Structures
+Multimedia
+Understanding the Object Detection Process: Training
+Multimedia
+Understanding the Object Detection Process: Prediction
+Multimedia
+Application: Faster R-CNN
+Multimedia
+Prediction
+Multimedia
+Detect Objects
+Multimedia
+Mask R-CNN
+Multimedia
+Application: Mask R-CNN
+Multimedia
+SSD (Single Shot Multibox Detector)
+Multimedia
+Application: SSD (Single Shot Multibox Detector)
+Multimedia
+RetinaNet
+Multimedia
+Application: RetinaNet
+Multimedia
+YOLO (You Only Look Once)
+Multimedia
+Application: YOLO v8
+Multimedia
+Application: YOLO v3
+Multimedia
+Application: Object Tracking with YOLO v3
+Multimedia
+Application: Object Tracking with YOLO v8
+Multimedia
+Application: Object Counting with YOLO v8
+Multimedia
+Application: Real Time Object Detection
+Multimedia
+Exercises
+Exercises
+ · 15 Soru
+
+Sequence Models
+0 / 60Tebrikler bitti!
+Course Materials
+Downloads
+·
+ÖN KOŞUL
+Chapter 1: Sequence Models and RNN
+Multimedia
+What is Recurrent Neural Network?
+Multimedia
+Basic Consepts of RNN
+Multimedia
+Unfolded Graph
+Multimedia
+How to Calculate Hidden State?
+Multimedia
+Learning Process in RNN
+Multimedia
+Exercises
+Exercises
+ · 15 Soru
+Long Term Dependencies
+Multimedia
+Application: Weather Forecasting
+Multimedia
+Data Preparation
+Multimedia
+Time Series Visualisation
+Multimedia
+Correlation HeatMap
+Multimedia
+Anomaly Detection
+Multimedia
+Time Based Splitting
+Multimedia
+Scaling
+Multimedia
+Time Window
+Multimedia
+Model
+Multimedia
+Model Performance
+Multimedia
+Plot Predictions
+Multimedia
+Chapter 2: Long Short-Term Memory (LSTM)
+Multimedia
+Motivation
+Multimedia
+Memory Cell
+Multimedia
+Forget Gate
+Multimedia
+Input Gate
+Multimedia
+Output Gate
+Multimedia
+Exercises
+Exercises
+ · 15 Soru
+Learning Process in LSTM
+Multimedia
+Weather Forecasting with LSTM
+Multimedia
+Weather Forecasting for All Data
+Multimedia
+Hyperparameter Optimization
+Multimedia
+Return Sequences
+Multimedia
+Random Search
+Multimedia
+Gated Recurrent Unit (GRU)
+Multimedia
+Application: GRU
+Multimedia
+Assignment: Weather Forecasting
+Multimedia
+Assignment Solution: Weather Forecasting
+Multimedia
+Chapter 3: Natural Language Processing (NLP)
+Multimedia
+Mathematical Representations
+Multimedia
+Bag of Words
+Multimedia
+Word Embeddings
+Multimedia
+Word2Vec & GloVe & FastText
+Multimedia
+Download and Loading GloVe Vectors
+Multimedia
+Cosine Similarity for Love & Hate
+Multimedia
+Similarity Between Global Keywords and Countries
+Multimedia
+King - Man + Woman = ?
+Multimedia
+Exercises
+Exercises
+ · 15 Soru
+Emotion Classification I: Data Understanding
+Multimedia
+Emotion Classification II: Text Preprocessing
+Multimedia
+Emotion Classification III: Modeling with Keras Embeddings
+Multimedia
+Emotion Classification IV: Play With Embeddings
+Multimedia
+Emotion Classification V: 2D Visualization of Emotion Vectors
+Multimedia
+Emotion Classification with GloVe & LSTM I: Data Preparation
+Multimedia
+Emotion Classification with GloVe & LSTM II: Modeling
+Multimedia
+Emotion Classification with GloVe & LSTM III: Play with Embeddings
+Multimedia
+Emotion Classification with FastText & LSTM I: Modeling
+Multimedia
+Emotion Classification with FastText & LSTM II: Prediction
+Multimedia
+Assignment: Word Embeddings
+Multimedia
+Assignment Solution: Word Embeddings
+Multimedia
+Tebrikler!
+

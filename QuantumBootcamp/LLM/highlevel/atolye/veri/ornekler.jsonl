@@ -1,0 +1,56 @@
+{"soru": "Eğitimimde ne kadar ilerledim? Kayıt no 482137", "cevap": "{\"tool\": \"ilerleme_durumu\", \"args\": {\"no\": \"482137\"}}"}
+{"soru": "482154 numaralı öğrencinin ilerleme durumu nedir?", "cevap": "{\"tool\": \"ilerleme_durumu\", \"args\": {\"no\": \"482154\"}}"}
+{"soru": "no: 482166 kaç modül bitirdim", "cevap": "{\"tool\": \"ilerleme_durumu\", \"args\": {\"no\": \"482166\"}}"}
+{"soru": "Merhaba, 482178 numaralı kayıt bende. İlerlememi görebilir miyim?", "cevap": "{\"tool\": \"ilerleme_durumu\", \"args\": {\"no\": \"482178\"}}"}
+{"soru": "Kursumun yüzde kaçını tamamladım? Kayıt numaram 482190.", "cevap": "{\"tool\": \"ilerleme_durumu\", \"args\": {\"no\": \"482190\"}}"}
+{"soru": "İlerleme 482203", "cevap": "{\"tool\": \"ilerleme_durumu\", \"args\": {\"no\": \"482203\"}}"}
+{"soru": "482215 nolu kaydın tamamlanma yüzdesi", "cevap": "{\"tool\": \"ilerleme_durumu\", \"args\": {\"no\": \"482215\"}}"}
+{"soru": "Ne kadarını bitirdim acaba? 482227", "cevap": "{\"tool\": \"ilerleme_durumu\", \"args\": {\"no\": \"482227\"}}"}
+{"soru": "Kayıt numaram 482239, eğitimim ne durumda?", "cevap": "{\"tool\": \"ilerleme_durumu\", \"args\": {\"no\": \"482239\"}}"}
+{"soru": "482241 için ilerleme sorgula", "cevap": "{\"tool\": \"ilerleme_durumu\", \"args\": {\"no\": \"482241\"}}"}
+{"soru": "Kaç modül kaldı? no 482253", "cevap": "{\"tool\": \"ilerleme_durumu\", \"args\": {\"no\": \"482253\"}}"}
+{"soru": "482265 numaralı öğrenci eğitimin ne kadarını tamamlamış?", "cevap": "{\"tool\": \"ilerleme_durumu\", \"args\": {\"no\": \"482265\"}}"}
+{"soru": "Sertifika alabilir miyim? Kayıt no 482277", "cevap": "{\"tool\": \"ilerleme_durumu\", \"args\": {\"no\": \"482277\"}}"}
+{"soru": "Canlı ders programımı gösterir misin? Kayıt no 482137", "cevap": "{\"tool\": \"canli_ders_programi\", \"args\": {\"no\": \"482137\"}}"}
+{"soru": "482154 numaralı öğrencinin haftalık canlı ders takvimi", "cevap": "{\"tool\": \"canli_ders_programi\", \"args\": {\"no\": \"482154\"}}"}
+{"soru": "Yarın canlı dersim var mı? no: 482166", "cevap": "{\"tool\": \"canli_ders_programi\", \"args\": {\"no\": \"482166\"}}"}
+{"soru": "Salı günü oturum var mı? Kayıt numaram 482178", "cevap": "{\"tool\": \"canli_ders_programi\", \"args\": {\"no\": \"482178\"}}"}
+{"soru": "Haftalık ders takvimim nedir? 482190", "cevap": "{\"tool\": \"canli_ders_programi\", \"args\": {\"no\": \"482190\"}}"}
+{"soru": "482203 canlı ders programı", "cevap": "{\"tool\": \"canli_ders_programi\", \"args\": {\"no\": \"482203\"}}"}
+{"soru": "Takvimimi görebilir miyim, kayıt numaram 482215", "cevap": "{\"tool\": \"canli_ders_programi\", \"args\": {\"no\": \"482215\"}}"}
+{"soru": "Cumartesi dersim kaçta? Kayıt no 482227", "cevap": "{\"tool\": \"canli_ders_programi\", \"args\": {\"no\": \"482227\"}}"}
+{"soru": "482239 nolu öğrencinin canlı derslerini listele", "cevap": "{\"tool\": \"canli_ders_programi\", \"args\": {\"no\": \"482239\"}}"}
+{"soru": "Bu hafta hangi oturumlara gireceğim? no 482253", "cevap": "{\"tool\": \"canli_ders_programi\", \"args\": {\"no\": \"482253\"}}"}
+{"soru": "Ders saatlerimi öğrenmek istiyorum. Kayıt no: 482265", "cevap": "{\"tool\": \"canli_ders_programi\", \"args\": {\"no\": \"482265\"}}"}
+{"soru": "Borcum var mı? Kayıt no 482137", "cevap": "{\"tool\": \"odeme_durumu\", \"args\": {\"no\": \"482137\"}}"}
+{"soru": "482154 numaralı kaydın kalan ödemesi", "cevap": "{\"tool\": \"odeme_durumu\", \"args\": {\"no\": \"482154\"}}"}
+{"soru": "Ne kadar ödemem kaldı? no: 482166", "cevap": "{\"tool\": \"odeme_durumu\", \"args\": {\"no\": \"482166\"}}"}
+{"soru": "Eğitim ücretimi tamamen ödedim mi? kayıt numaram 482178", "cevap": "{\"tool\": \"odeme_durumu\", \"args\": {\"no\": \"482178\"}}"}
+{"soru": "482190 ödeme sorgula", "cevap": "{\"tool\": \"odeme_durumu\", \"args\": {\"no\": \"482190\"}}"}
+{"soru": "Kalan taksitim var mı? Kayıt no 482203", "cevap": "{\"tool\": \"odeme_durumu\", \"args\": {\"no\": \"482203\"}}"}
+{"soru": "Yeni eğitime kayıt olabilir miyim, borcum var mı? no 482227", "cevap": "{\"tool\": \"odeme_durumu\", \"args\": {\"no\": \"482227\"}}"}
+{"soru": "482239 numaralı öğrencinin ödenmemiş tutarı nedir?", "cevap": "{\"tool\": \"odeme_durumu\", \"args\": {\"no\": \"482239\"}}"}
+{"soru": "Ödeme durumum nedir? Kayıt numaram: 482241", "cevap": "{\"tool\": \"odeme_durumu\", \"args\": {\"no\": \"482241\"}}"}
+{"soru": "Faturamı kapattım mı? 482253", "cevap": "{\"tool\": \"odeme_durumu\", \"args\": {\"no\": \"482253\"}}"}
+{"soru": "482265 ödeme", "cevap": "{\"tool\": \"odeme_durumu\", \"args\": {\"no\": \"482265\"}}"}
+{"soru": "İlerlemem ne durumda?", "cevap": "Kayıt numaranızı paylaşır mısınız? İlerlemenizi ancak numaranızla sorgulayabilirim."}
+{"soru": "Borcum var mı acaba?", "cevap": "Kayıt numaranızı yazar mısınız? Ödeme sorgulaması numarayla yapılıyor."}
+{"soru": "Canlı ders programımı görebilir miyim?", "cevap": "Tabii, kayıt numaranızı paylaşır mısınız?"}
+{"soru": "Kaç modül tamamladım?", "cevap": "Kayıt numaranızı belirtirseniz ilerlemenizi sorgulayabilirim."}
+{"soru": "Kalan ödememi öğrenmek istiyorum.", "cevap": "Kayıt numaranızı yazmanız yeterli, hemen sorgulayayım."}
+{"soru": "Data Scientist Path kaç saat sürüyor?", "cevap": "Bu soru için araç gerekmiyor."}
+{"soru": "Bootcamp programları ne kadar sürüyor?", "cevap": "Bu soru için araç gerekmiyor."}
+{"soru": "Hangi eğitim yeni başlayanlar için uygun?", "cevap": "Bu soru için araç gerekmiyor."}
+{"soru": "Kariyer yolculuğu ile kurs arasındaki fark ne?", "cevap": "Bu soru için araç gerekmiyor."}
+{"soru": "Eğitim paketlerinin içinde neler var?", "cevap": "Bu soru için araç gerekmiyor."}
+{"soru": "Zaman Serileri kursunun ücreti ne kadar?", "cevap": "Bu soru için araç gerekmiyor."}
+{"soru": "Merhaba, nasılsın?", "cevap": "Merhaba! İyiyim, teşekkür ederim. Eğitimlerinizle ilgili size nasıl yardımcı olabilirim?"}
+{"soru": "Teşekkürler, çok yardımcı oldun.", "cevap": "Rica ederim! Başka bir sorunuz olursa buradayım."}
+{"soru": "Günaydın", "cevap": "Günaydın! Size nasıl yardımcı olabilirim?"}
+{"soru": "Sen kimsin?", "cevap": "Miuul öğrenci destek asistanıyım. İlerleme, canlı ders takvimi ve ödeme durumu sorgularınızda yardımcı olabilirim."}
+{"soru": "Eğitimimde ne kadar ilerledim? Kayıt no 482137", "arac_cagrisi": "{\"tool\": \"ilerleme_durumu\", \"args\": {\"no\": \"482137\"}}", "arac_sonucu": "Elif Yaman — AI Data Scientist Bootcamp: %60 tamamlandı (6/10 modül)", "cevap": "AI Data Scientist Bootcamp eğitiminizin %60'ını tamamladınız, 10 modülün 6'sı bitti."}
+{"soru": "Borcum var mı? Kayıt no 482154", "arac_cagrisi": "{\"tool\": \"odeme_durumu\", \"args\": {\"no\": \"482154\"}}", "arac_sonucu": "Mert Doğan — toplam 550 USD, ödenen 220 USD, kalan 330 USD", "cevap": "Toplam 550 USD'nin 220 USD'sini ödediniz, 330 USD borcunuz görünüyor."}
+{"soru": "Canlı ders programımı gösterir misin? Kayıt no 482137", "arac_cagrisi": "{\"tool\": \"canli_ders_programi\", \"args\": {\"no\": \"482137\"}}", "arac_sonucu": "Elif Yaman — canlı ders takvimi: Salı 20:00 — Makine Öğrenmesi; Perşembe 20:00 — MS SQL Sorgulama; Cumartesi 10:00 — Proje atölyesi", "cevap": "Canlı dersleriniz: Salı 20:00 Makine Öğrenmesi, Perşembe 20:00 MS SQL Sorgulama, Cumartesi 10:00 Proje atölyesi."}
+{"soru": "482166 numaralı öğrencinin ilerlemesi nedir?", "arac_cagrisi": "{\"tool\": \"ilerleme_durumu\", \"args\": {\"no\": \"482166\"}}", "arac_sonucu": "Zeynep Aksoy — Data Scientist Path: %100 tamamlandı (9/9 modül)", "cevap": "Zeynep Aksoy, Data Scientist Path eğitimini %100 tamamlamış."}
+{"soru": "Kalan ödemem ne kadar? Kayıt no 482190", "arac_cagrisi": "{\"tool\": \"odeme_durumu\", \"args\": {\"no\": \"482190\"}}", "arac_sonucu": "Ayşe Karataş — ödemesi tamamlanmış, kalan borç yok.", "cevap": "Ödemeniz tamamlanmış, kalan borcunuz yok."}
+{"soru": "Canlı dersim var mı? Kayıt no 482166", "arac_cagrisi": "{\"tool\": \"canli_ders_programi\", \"args\": {\"no\": \"482166\"}}", "arac_sonucu": "Zeynep Aksoy — Data Scientist Path video tabanlı bir program, canlı ders yok. Kendi hızınızda ilerliyorsunuz.", "cevap": "Data Scientist Path video tabanlı bir program, canlı dersi yok; kendi hızınızda ilerliyorsunuz."}

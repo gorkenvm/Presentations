@@ -1,0 +1,16 @@
+# lowlevel atölye — highlevel/atölye ile AYNI sürümler.
+# O ortamda provası yapıldı, çalıştığı biliniyor. Atölye günü
+# "pip install -U" YAPMAYIN.
+#
+# En kolay yol: yeni bir venv kurmayın, mevcut olanı kullanın —
+# KURULUM.md, A yolu. Bu dosya sadece sıfırdan kurmak isteyene.
+#
+# torch ayrı kurulur (CUDA sürümü PyPI'de değil):
+#   pip install torch==2.6.0 --index-url https://download.pytorch.org/whl/cu124
+
+transformers==5.15.1
+tokenizers==0.22.2
+accelerate==1.14.0
+peft==0.20.0
+numpy==2.5.2
+safetensors==0.8.0

@@ -1,0 +1,27 @@
+Güvendiğimiz araçlar gerçeği bulmak yerine yalan söylemeye başladığında ne olur? Bu, Mata - Avianca davasının hikayesidir; yeni bir tür mesleki ihmal, kariyer bitiren bir utanç ve bir makineye gerçeği emanet etmenin tehlikeleri hakkında güçlü bir uyarıdır.
+Olayın Başlangıcı ve Yapay Zekaya Başvuru Roberto Mata, Avianca Havayolları ile yaptığı bir uçuşta dizine metal bir servis arabasının çarpması sonucu yaralanır ve dava açmaya karar verir.
+ Avukatları, New York federal mahkemesinde bir kişisel yaralanma davası açar. Bu tür davalar, argümanları desteklemek için onlarca yıllık emsal kararları taramayı gerektiren, saatlerce süren zahmetli ve pahalı bir araştırma süreci gerektirir.
+ Ancak 2023 yılında avukatlar, insan gibi okuyup yazabilen ChatGPT adlı yeni bir aracı kullanarak bir kısa yol denediler.
+Hayali Bir Hukuk Evreni ChatGPT hızlıydı ve cevaplarını otoriter bir hukuk diliyle veriyordu; fakat çok büyük bir sorun vardı: Yapay zekanın atıfta bulunduğu her bir dava tamamen uydurmaydı.
+ ChatGPT; Vargas - China Southern Airlines, Shaboon - Egypt ve Zikurman - Korean Airlines gibi sahte mahkemeler, sahte yıllar ve hayali hakim alıntılarıyla dolu tamamen var olmayan bir hukuk evreni yarattı.
+ Avukatlar, hiçbir uyarı veya feragatname içermeyen bu sahte davaları kopyalayıp doğrudan resmi mahkeme dosyalarına yapıştırdılar.
+Yalanın Katlanması Avianca Havayolları'nın avukatları bu davaları hiçbir hukuk veri tabanında bulamayınca durumu mahkemeye bildirdiler.
+ Mata'nın avukatları hatalarını kabul etmek yerine ChatGPT'ye dönüp davaların gerçek olup olmadığını tekrar sordular.
+ Gerçekle hiçbir bağlantısı olmayan yapay zeka, davaların gerçek olduğunu ve saygın veri tabanlarında bulunabileceğini iddia etti.
+ Avukatlar, bu konuşmanın ekran görüntülerini hakime kanıt olarak sundular; yani yapay zekanın orijinal yalanlarını doğrulamak için yine onun yalanlarını kullandılar.
+Mahkemenin Kararı ve "Halüsinasyon" New York Güney Bölgesi Federal Yargıcı P. Kevin Castel, ekran görüntüleri yerine fiziksel belgeleri istediğinde avukatlar her şeyi itiraf etmek zorunda kaldı.
+ Hiçbir dava gerçek değildi.
+Peki, milyarlarca dolarlık bir yapay zeka neden bir şeyler uydurur? Cevap "halüsinasyon" (hallucination) kavramında yatmaktadır.
+ ChatGPT bir arama motoru değildir; o bir geniş dil modelidir (LLM).
+ Tek görevi, bir cümledeki bir sonraki en olası kelimeyi tahmin etmektir. Bir hukuk davasının neye benzediğini bildiği için (isimler, cilt numaraları, mahkeme kısaltmaları) mükemmel bir dilsel kopya oluşturur.
+ Yapay zekanın gerçeklik veya yalan kavramı yoktur; sadece akıcı ve kulağa mantıklı gelen metinler üretir.
+Sonuçlar ve Alınan Dersler Haziran 2023'te Yargıç Castel, avukatlar Steven Schwarz ve Peter LoDuca'nın her birine 5.000 dolar para cezası verdi.
+ Mahkeme, avukatların hayali makamlar sunarak kötü niyetle hareket ettiğine karar verdi.
+ Hukuk bürosu yaptırıma uğradı ve asıl yaralanma davası reddedildi.
+Bu felaket üç kritik başarısızlığın sonucuydu:
+Aracı yanlış anlamak: Bir metin oluşturucuyu, bir olgu denetleyicisi gibi kullanmak.
+Doğrulamada başarısız olmak: Yapay zeka tarafından üretilen bilgileri gerçek bir kaynakla kontrol etmemek.
+Yapay zekanın kendisini doğrulamasına güvenmek: Bir yalancıdan, doğruyu söyleyip söylemediğini teyit etmesini istemek.
+Yargıç Castel'in belirttiği gibi bu, üretken yapay zekaya dikkatsizce güvenmenin bir sonucuydu.
+ Yapay zeka güçlü bir araçtır ancak bir doğruluk kaynağı değildir.
+ Otomasyon çağında insan muhakemesi, şüphecilik ve sorumluluk her zamankinden daha değerlidir.

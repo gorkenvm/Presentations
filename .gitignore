@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Editör ve işletim sistemi
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Office geçici dosyaları
+~$*
+
+# Eğitilmiş model ağırlıkları (atölyede yeniden üretiliyor)
+*.safetensors
+QuantumBootcamp/LLM/lowlevel/atolye/adapter/tokenizer.json
+
+# Ön eğitimli model ağırlıkları (indirilebilir, 248 MB)
+*.weights

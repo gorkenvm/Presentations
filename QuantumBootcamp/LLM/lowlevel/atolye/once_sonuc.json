@@ -1,0 +1,234 @@
+{
+ "talimatsiz": {
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "kip": "talimatsiz",
+  "sistem": "Sen Miuul eğitim platformunun öğrenci destek asistanısın.",
+  "en_fazla_yeni": 120,
+  "zaman": "2026-08-26T18:59:09",
+  "skor": {
+   "toplam": 10,
+   "tam": 0,
+   "icinde": 0,
+   "ort_token": 72.0
+  },
+  "istem": {
+   "soru_sayisi": 10,
+   "talimatsiz": 40.0,
+   "talimatli": 268.0,
+   "fark": 228.0,
+   "kat": 6.7,
+   "sistem_talimatsiz": 16,
+   "sistem_talimatli": 244
+  },
+  "gosteri": [
+   {
+    "soru": "Kayıt no 482137, kaç modül kaldı bana?",
+    "etiket": "ilerleme",
+    "cikti": "Üzgünüm, bu bilgiye erişim vermem için gerekli bir bağlantı veya daha fazla detay sağlayamadım. Kayıtlar genellikle özel sistemlerde saklanır ve bu sistemler genellikle belirli kurallara dayanır. Eğer bu kaydınizi kontrol etmek istiyorsanız, bu sistemin yöneticilerine başvurmanızı öneririm. Başka bir konuda yardımcı olabilir miyim?",
+    "token": 105
+   },
+   {
+    "soru": "482154 borç durumum nedir",
+    "etiket": "odeme",
+    "cikti": "Üzgünüm, ancak ben bir bilgi verici olmam ve bu tür özel durumları kontrol etmem veya yardım edemem. Bu sorunu doğrudan yöneticinizin veya bankacılığınızdan öğrenmeniz en iyi yol olacaktır. Eğer yardıma ihtiyacınız varsa, lütfen bu konuda yardımcı olabilecek bir kişiyle iletişime geçin veya banka ile görüşünüz.",
+    "token": 95
+   },
+   {
+    "soru": "Bu hafta hangi gün canlı dersim var? no 482166",
+    "etiket": "canli_ders",
+    "cikti": "Üzgünüm, ben bir yapay zeka asistanım ve gerçek zamanlı veritabanı veya canlı dersler hakkında bilgiye sahip değilim. Ancak, seninle iletişime geçebilirim nasıl yardımcı olabilirim?",
+    "token": 55
+   },
+   {
+    "soru": "Sıfırdan Başlayanlar için Veri Bilimi kaç saat?",
+    "etiket": "katalog",
+    "cikti": "Veri bilimi, özellikle yüksek hızlı veri işleme (Hadoop) ve veri analizi gibi konularda çok önemli bir alanda yer alır. Ancak, \"sıfırdan başlayan\" veya \"basit\" bir veri bilim programına dayalı bir kurs veya eğitimde kaç saat geçirebiliriz?\n\nBu durumda, belirli bir kurs veya eğitimin \"sıfırdan başlayan\" olduğunu belirtmek zor olabilir. Herhangi bir veri bilim programı gen",
+    "token": 120
+   },
+   {
+    "soru": "Naber",
+    "etiket": "diger",
+    "cikti": "Üzgünüm, size nasıl yardımcı olabilirim?",
+    "token": 12
+   }
+  ],
+  "test": [
+   {
+    "soru": "Kayıt no 482137, kaç modül kaldı bana?",
+    "etiket": "ilerleme",
+    "cikti": "Üzgünüm, bu bilgiye erişim vermem için gerekli bir bağlantı veya daha fazla detay sağlayamadım. Kayıtlar genellikle özel sistemlerde saklanır ve bu sistemler genellikle belirli kurallara dayanır. Eğer bu kaydınizi kontrol etmek istiyorsanız, bu sistemin yöneticilerine başvurmanızı öneririm. Başka bir konuda yardımcı olabilir miyim?",
+    "token": 105
+   },
+   {
+    "soru": "eğitimimin yüzde kaçı bitti",
+    "etiket": "ilerleme",
+    "cikti": "Eğitimin tamamı bittikten sonra, eğitim sisteminin %10'dan fazla olan kısmı eğitim sonucu olmayan ve eğitim sürecinin sonuna kadar devam eden öğrencilerle ilgili olarak değerlendirilmektedir. Bu nedenle, eğitiminin tamamı bittiği zaman, eğitim süreci sona ermiş olup, bu süreçte öğrenilen bilgi ve teknolojiye dayalı olarak eğitim sonucu olmayan öğrencilerle ilgili bir durum olabilir. Ancak, bu dur",
+    "token": 120
+   },
+   {
+    "soru": "482154 borç durumum nedir",
+    "etiket": "odeme",
+    "cikti": "Üzgünüm, ancak ben bir bilgi verici olmam ve bu tür özel durumları kontrol etmem veya yardım edemem. Bu sorunu doğrudan yöneticinizin veya bankacılığınızdan öğrenmeniz en iyi yol olacaktır. Eğer yardıma ihtiyacınız varsa, lütfen bu konuda yardımcı olabilecek bir kişiyle iletişime geçin veya banka ile görüşünüz.",
+    "token": 95
+   },
+   {
+    "soru": "ödeyeceğim başka bir şey kaldı mı",
+    "etiket": "odeme",
+    "cikti": "Üzgünüm, ben bir bilgi verici olmam ve senin için özel bir hizmet sağlayamam. Size nasıl yardımcı olabilirim?",
+    "token": 35
+   },
+   {
+    "soru": "Bu hafta hangi gün canlı dersim var? no 482166",
+    "etiket": "canli_ders",
+    "cikti": "Üzgünüm, ben bir yapay zeka asistanım ve gerçek zamanlı veritabanı veya canlı dersler hakkında bilgiye sahip değilim. Ancak, seninle iletişime geçebilirim nasıl yardımcı olabilirim?",
+    "token": 55
+   },
+   {
+    "soru": "ders programımı mail atabilir misiniz",
+    "etiket": "canli_ders",
+    "cikti": "Üzgünüm, ben bir web tabanlı sohbet platformu ve eğitim platformu değilim. Ders programınızı veya öğrencilerin derslerini yönetmenizi sağlayacak bir yazılım varsa, bu sistemlerimiz tarafından sağlanır. Size en uygun hizmet sunabilirim.",
+    "token": 66
+   },
+   {
+    "soru": "Sıfırdan Başlayanlar için Veri Bilimi kaç saat?",
+    "etiket": "katalog",
+    "cikti": "Veri bilimi, özellikle yüksek hızlı veri işleme (Hadoop) ve veri analizi gibi konularda çok önemli bir alanda yer alır. Ancak, \"sıfırdan başlayan\" veya \"basit\" bir veri bilim programına dayalı bir kurs veya eğitimde kaç saat geçirebiliriz?\n\nBu durumda, belirli bir kurs veya eğitimin \"sıfırdan başlayan\" olduğunu belirtmek zor olabilir. Herhangi bir veri bilim programı gen",
+    "token": 120
+   },
+   {
+    "soru": "Blockchain Developer eğitiminiz var mı?",
+    "etiket": "katalog",
+    "cikti": "Üzgünüm, senin soruyu yanıtlamak için daha fazla bilgi vermek gerekir. Blockchain teknolojisini kullanarak geliştirilen bir uygulama veya programı öğrenmek için uygun bir kurs ya da eğitim programı arayabilirsiniz. Eğer blockchain teknolojisi hakkında bilgileri paylaşır gibi görünse, bu bilgilerle ilgili bir konu hakkında detaylı bir şekilde yardımcı olabilirim.",
+    "token": 100
+   },
+   {
+    "soru": "Naber",
+    "etiket": "diger",
+    "cikti": "Üzgünüm, size nasıl yardımcı olabilirim?",
+    "token": 12
+   },
+   {
+    "soru": "çok teşekkürler",
+    "etiket": "diger",
+    "cikti": "Üzgünüm, size nasıl yardımcı olabilirim?",
+    "token": 12
+   }
+  ]
+ },
+ "talimatli": {
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "kip": "talimatli",
+  "sistem": "Sen Miuul eğitim platformunun öğrenci destek asistanısın.\n\nGörevin, gelen mesajı sınıflandırmak. Aşağıdaki beş etiketten TAM OLARAK\nbirini yaz. Başka hiçbir şey yazma — açıklama yapma, cümle kurma,\nnoktalama koyma, mesajı tekrarlama.\n\nEtiketler ve anlamları:\n- ilerleme    : öğrencinin eğitimde kaç modül bitirdiği, yüzde kaçta olduğu\n- odeme       : kalan borç, ödenen tutar, taksit durumu\n- canli_ders  : haftalık canlı ders takvimi, gün ve saat\n- katalog     : eğitimlerin süresi, ücreti, içeriği hakkındaki sorular\n- diger       : selamlaşma, teşekkür, konu dışı ya da yukarıdakilere girmeyen istek\n\nKayıt numarası olsun ya da olmasın, mesajın NİYETİNE bak.\nCevabın tek kelime olacak.",
+  "en_fazla_yeni": 120,
+  "zaman": "2026-08-26T19:00:17",
+  "skor": {
+   "toplam": 10,
+   "tam": 5,
+   "icinde": 5,
+   "ort_token": 3.0
+  },
+  "istem": {
+   "soru_sayisi": 10,
+   "talimatsiz": 40.0,
+   "talimatli": 268.0,
+   "fark": 228.0,
+   "kat": 6.7,
+   "sistem_talimatsiz": 16,
+   "sistem_talimatli": 244
+  },
+  "gosteri": [
+   {
+    "soru": "Kayıt no 482137, kaç modül kaldı bana?",
+    "etiket": "ilerleme",
+    "cikti": "ilerleme",
+    "token": 3
+   },
+   {
+    "soru": "482154 borç durumum nedir",
+    "etiket": "odeme",
+    "cikti": "odeme",
+    "token": 2
+   },
+   {
+    "soru": "Bu hafta hangi gün canlı dersim var? no 482166",
+    "etiket": "canli_ders",
+    "cikti": "canli_ders",
+    "token": 4
+   },
+   {
+    "soru": "Sıfırdan Başlayanlar için Veri Bilimi kaç saat?",
+    "etiket": "katalog",
+    "cikti": "katalog",
+    "token": 2
+   },
+   {
+    "soru": "Naber",
+    "etiket": "diger",
+    "cikti": "İllerken!",
+    "token": 4
+   }
+  ],
+  "test": [
+   {
+    "soru": "Kayıt no 482137, kaç modül kaldı bana?",
+    "etiket": "ilerleme",
+    "cikti": "ilerleme",
+    "token": 3
+   },
+   {
+    "soru": "eğitimimin yüzde kaçı bitti",
+    "etiket": "ilerleme",
+    "cikti": "ilerleme",
+    "token": 3
+   },
+   {
+    "soru": "482154 borç durumum nedir",
+    "etiket": "odeme",
+    "cikti": "odeme",
+    "token": 2
+   },
+   {
+    "soru": "ödeyeceğim başka bir şey kaldı mı",
+    "etiket": "odeme",
+    "cikti": "ilerleme",
+    "token": 3
+   },
+   {
+    "soru": "Bu hafta hangi gün canlı dersim var? no 482166",
+    "etiket": "canli_ders",
+    "cikti": "canli_ders",
+    "token": 4
+   },
+   {
+    "soru": "ders programımı mail atabilir misiniz",
+    "etiket": "canli_ders",
+    "cikti": "ilerleme",
+    "token": 3
+   },
+   {
+    "soru": "Sıfırdan Başlayanlar için Veri Bilimi kaç saat?",
+    "etiket": "katalog",
+    "cikti": "katalog",
+    "token": 2
+   },
+   {
+    "soru": "Blockchain Developer eğitiminiz var mı?",
+    "etiket": "katalog",
+    "cikti": "ilerleme",
+    "token": 3
+   },
+   {
+    "soru": "Naber",
+    "etiket": "diger",
+    "cikti": "İllerken!",
+    "token": 4
+   },
+   {
+    "soru": "çok teşekkürler",
+    "etiket": "diger",
+    "cikti": "ilerleme",
+    "token": 3
+   }
+  ]
+ }
+}

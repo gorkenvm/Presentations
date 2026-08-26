@@ -1,0 +1,587 @@
+{
+ "20210451": {
+  "ad": "Elif Yaman",
+  "bolum": "Bilgisayar Mühendisliği",
+  "sinif": 3,
+  "gno": 3.42,
+  "borc_tl": 0,
+  "devamsizlik": {
+   "Veri Yapıları": 2,
+   "Algoritmalar": 4,
+   "İşletim Sistemleri": 0
+  },
+  "ders_programi": [
+   {
+    "gun": "Pazartesi",
+    "saat": "13:00",
+    "ders": "Veri Yapıları"
+   },
+   {
+    "gun": "Salı",
+    "saat": "11:00",
+    "ders": "Algoritmalar"
+   },
+   {
+    "gun": "Çarşamba",
+    "saat": "15:00",
+    "ders": "İşletim Sistemleri"
+   },
+   {
+    "gun": "Perşembe",
+    "saat": "09:00",
+    "ders": "Veritabanı"
+   },
+   {
+    "gun": "Cuma",
+    "saat": "09:00",
+    "ders": "Yapay Zekâya Giriş"
+   }
+  ]
+ },
+ "20210118": {
+  "ad": "Mert Doğan",
+  "bolum": "Bilgisayar Mühendisliği",
+  "sinif": 3,
+  "gno": 1.99,
+  "borc_tl": 2400,
+  "devamsizlik": {
+   "Veri Yapıları": 4,
+   "Algoritmalar": 3,
+   "İşletim Sistemleri": 0
+  },
+  "ders_programi": [
+   {
+    "gun": "Pazartesi",
+    "saat": "11:00",
+    "ders": "Veri Yapıları"
+   },
+   {
+    "gun": "Salı",
+    "saat": "09:00",
+    "ders": "Algoritmalar"
+   },
+   {
+    "gun": "Çarşamba",
+    "saat": "09:00",
+    "ders": "İşletim Sistemleri"
+   },
+   {
+    "gun": "Perşembe",
+    "saat": "15:00",
+    "ders": "Veritabanı"
+   },
+   {
+    "gun": "Cuma",
+    "saat": "15:00",
+    "ders": "Yapay Zekâya Giriş"
+   }
+  ]
+ },
+ "20220307": {
+  "ad": "Zeynep Aksoy",
+  "bolum": "Endüstri Mühendisliği",
+  "sinif": 2,
+  "gno": 3.8,
+  "borc_tl": 0,
+  "devamsizlik": {
+   "Yöneylem Araştırması": 4,
+   "Üretim Planlama": 6,
+   "İstatistik": 1
+  },
+  "ders_programi": [
+   {
+    "gun": "Pazartesi",
+    "saat": "09:00",
+    "ders": "Yöneylem Araştırması"
+   },
+   {
+    "gun": "Salı",
+    "saat": "11:00",
+    "ders": "Üretim Planlama"
+   },
+   {
+    "gun": "Çarşamba",
+    "saat": "09:00",
+    "ders": "İstatistik"
+   },
+   {
+    "gun": "Perşembe",
+    "saat": "15:00",
+    "ders": "Ergonomi"
+   },
+   {
+    "gun": "Cuma",
+    "saat": "09:00",
+    "ders": "Kalite Yönetimi"
+   }
+  ]
+ },
+ "20190642": {
+  "ad": "Burak Şahin",
+  "bolum": "Makine Mühendisliği",
+  "sinif": 4,
+  "gno": 2.97,
+  "borc_tl": 3800,
+  "devamsizlik": {
+   "Termodinamik": 1,
+   "Akışkanlar Mekaniği": 0,
+   "Makine Elemanları": 4
+  },
+  "ders_programi": [
+   {
+    "gun": "Pazartesi",
+    "saat": "13:00",
+    "ders": "Termodinamik"
+   },
+   {
+    "gun": "Salı",
+    "saat": "15:00",
+    "ders": "Akışkanlar Mekaniği"
+   },
+   {
+    "gun": "Çarşamba",
+    "saat": "11:00",
+    "ders": "Makine Elemanları"
+   },
+   {
+    "gun": "Perşembe",
+    "saat": "09:00",
+    "ders": "Malzeme Bilimi"
+   },
+   {
+    "gun": "Cuma",
+    "saat": "13:00",
+    "ders": "Isı Transferi"
+   }
+  ]
+ },
+ "20230015": {
+  "ad": "Ayşe Karataş",
+  "bolum": "İşletme",
+  "sinif": 1,
+  "gno": 3.09,
+  "borc_tl": 1250,
+  "devamsizlik": {
+   "Muhasebe": 5,
+   "Pazarlama": 4,
+   "Finansal Yönetim": 3
+  },
+  "ders_programi": [
+   {
+    "gun": "Pazartesi",
+    "saat": "11:00",
+    "ders": "Muhasebe"
+   },
+   {
+    "gun": "Salı",
+    "saat": "13:00",
+    "ders": "Pazarlama"
+   },
+   {
+    "gun": "Çarşamba",
+    "saat": "09:00",
+    "ders": "Finansal Yönetim"
+   },
+   {
+    "gun": "Perşembe",
+    "saat": "09:00",
+    "ders": "Örgütsel Davranış"
+   },
+   {
+    "gun": "Cuma",
+    "saat": "09:00",
+    "ders": "Ekonomi"
+   }
+  ]
+ },
+ "20220884": {
+  "ad": "Can Erdem",
+  "bolum": "Elektrik-Elektronik Müh.",
+  "sinif": 2,
+  "gno": 2.35,
+  "borc_tl": 0,
+  "devamsizlik": {
+   "Devre Analizi": 5,
+   "Elektromanyetik": 6,
+   "Sinyaller ve Sistemler": 1
+  },
+  "ders_programi": [
+   {
+    "gun": "Pazartesi",
+    "saat": "13:00",
+    "ders": "Devre Analizi"
+   },
+   {
+    "gun": "Salı",
+    "saat": "15:00",
+    "ders": "Elektromanyetik"
+   },
+   {
+    "gun": "Çarşamba",
+    "saat": "15:00",
+    "ders": "Sinyaller ve Sistemler"
+   },
+   {
+    "gun": "Perşembe",
+    "saat": "13:00",
+    "ders": "Kontrol Sistemleri"
+   },
+   {
+    "gun": "Cuma",
+    "saat": "13:00",
+    "ders": "Güç Elektroniği"
+   }
+  ]
+ },
+ "20210993": {
+  "ad": "Deniz Ulusoy",
+  "bolum": "Bilgisayar Mühendisliği",
+  "sinif": 3,
+  "gno": 2.43,
+  "borc_tl": 0,
+  "devamsizlik": {
+   "Veri Yapıları": 0,
+   "Algoritmalar": 4,
+   "İşletim Sistemleri": 3
+  },
+  "ders_programi": [
+   {
+    "gun": "Pazartesi",
+    "saat": "09:00",
+    "ders": "Veri Yapıları"
+   },
+   {
+    "gun": "Salı",
+    "saat": "13:00",
+    "ders": "Algoritmalar"
+   },
+   {
+    "gun": "Çarşamba",
+    "saat": "15:00",
+    "ders": "İşletim Sistemleri"
+   },
+   {
+    "gun": "Perşembe",
+    "saat": "13:00",
+    "ders": "Veritabanı"
+   },
+   {
+    "gun": "Cuma",
+    "saat": "15:00",
+    "ders": "Yapay Zekâya Giriş"
+   }
+  ]
+ },
+ "20200276": {
+  "ad": "Selin Aydın",
+  "bolum": "Mimarlık",
+  "sinif": 4,
+  "gno": 1.93,
+  "borc_tl": 3800,
+  "devamsizlik": {
+   "Mimari Tasarım": 0,
+   "Yapı Bilgisi": 6,
+   "Şehir Planlama": 4
+  },
+  "ders_programi": [
+   {
+    "gun": "Pazartesi",
+    "saat": "11:00",
+    "ders": "Mimari Tasarım"
+   },
+   {
+    "gun": "Salı",
+    "saat": "13:00",
+    "ders": "Yapı Bilgisi"
+   },
+   {
+    "gun": "Çarşamba",
+    "saat": "11:00",
+    "ders": "Şehir Planlama"
+   },
+   {
+    "gun": "Perşembe",
+    "saat": "15:00",
+    "ders": "Statik"
+   },
+   {
+    "gun": "Cuma",
+    "saat": "15:00",
+    "ders": "Mimarlık Tarihi"
+   }
+  ]
+ },
+ "20230522": {
+  "ad": "Emre Koç",
+  "bolum": "İşletme",
+  "sinif": 1,
+  "gno": 1.99,
+  "borc_tl": 0,
+  "devamsizlik": {
+   "Muhasebe": 2,
+   "Pazarlama": 3,
+   "Finansal Yönetim": 5
+  },
+  "ders_programi": [
+   {
+    "gun": "Pazartesi",
+    "saat": "13:00",
+    "ders": "Muhasebe"
+   },
+   {
+    "gun": "Salı",
+    "saat": "13:00",
+    "ders": "Pazarlama"
+   },
+   {
+    "gun": "Çarşamba",
+    "saat": "13:00",
+    "ders": "Finansal Yönetim"
+   },
+   {
+    "gun": "Perşembe",
+    "saat": "15:00",
+    "ders": "Örgütsel Davranış"
+   },
+   {
+    "gun": "Cuma",
+    "saat": "15:00",
+    "ders": "Ekonomi"
+   }
+  ]
+ },
+ "20210740": {
+  "ad": "Naz Güler",
+  "bolum": "Endüstri Mühendisliği",
+  "sinif": 3,
+  "gno": 3.28,
+  "borc_tl": 3800,
+  "devamsizlik": {
+   "Yöneylem Araştırması": 2,
+   "Üretim Planlama": 0,
+   "İstatistik": 3
+  },
+  "ders_programi": [
+   {
+    "gun": "Pazartesi",
+    "saat": "09:00",
+    "ders": "Yöneylem Araştırması"
+   },
+   {
+    "gun": "Salı",
+    "saat": "09:00",
+    "ders": "Üretim Planlama"
+   },
+   {
+    "gun": "Çarşamba",
+    "saat": "13:00",
+    "ders": "İstatistik"
+   },
+   {
+    "gun": "Perşembe",
+    "saat": "15:00",
+    "ders": "Ergonomi"
+   },
+   {
+    "gun": "Cuma",
+    "saat": "13:00",
+    "ders": "Kalite Yönetimi"
+   }
+  ]
+ },
+ "20190188": {
+  "ad": "Kaan Yıldırım",
+  "bolum": "Makine Mühendisliği",
+  "sinif": 4,
+  "gno": 2.29,
+  "borc_tl": 0,
+  "devamsizlik": {
+   "Termodinamik": 1,
+   "Akışkanlar Mekaniği": 5,
+   "Makine Elemanları": 1
+  },
+  "ders_programi": [
+   {
+    "gun": "Pazartesi",
+    "saat": "13:00",
+    "ders": "Termodinamik"
+   },
+   {
+    "gun": "Salı",
+    "saat": "11:00",
+    "ders": "Akışkanlar Mekaniği"
+   },
+   {
+    "gun": "Çarşamba",
+    "saat": "09:00",
+    "ders": "Makine Elemanları"
+   },
+   {
+    "gun": "Perşembe",
+    "saat": "15:00",
+    "ders": "Malzeme Bilimi"
+   },
+   {
+    "gun": "Cuma",
+    "saat": "09:00",
+    "ders": "Isı Transferi"
+   }
+  ]
+ },
+ "20220461": {
+  "ad": "İrem Tosun",
+  "bolum": "Psikoloji",
+  "sinif": 2,
+  "gno": 2.75,
+  "borc_tl": 2400,
+  "devamsizlik": {
+   "Gelişim Psikolojisi": 2,
+   "Sosyal Psikoloji": 1,
+   "İstatistik": 6
+  },
+  "ders_programi": [
+   {
+    "gun": "Pazartesi",
+    "saat": "15:00",
+    "ders": "Gelişim Psikolojisi"
+   },
+   {
+    "gun": "Salı",
+    "saat": "15:00",
+    "ders": "Sosyal Psikoloji"
+   },
+   {
+    "gun": "Çarşamba",
+    "saat": "15:00",
+    "ders": "İstatistik"
+   },
+   {
+    "gun": "Perşembe",
+    "saat": "09:00",
+    "ders": "Bilişsel Psikoloji"
+   },
+   {
+    "gun": "Cuma",
+    "saat": "11:00",
+    "ders": "Deneysel Psikoloji"
+   }
+  ]
+ },
+ "20230709": {
+  "ad": "Ali Serttaş",
+  "bolum": "Bilgisayar Mühendisliği",
+  "sinif": 1,
+  "gno": 3.77,
+  "borc_tl": 0,
+  "devamsizlik": {
+   "Veri Yapıları": 0,
+   "Algoritmalar": 1,
+   "İşletim Sistemleri": 1
+  },
+  "ders_programi": [
+   {
+    "gun": "Pazartesi",
+    "saat": "15:00",
+    "ders": "Veri Yapıları"
+   },
+   {
+    "gun": "Salı",
+    "saat": "13:00",
+    "ders": "Algoritmalar"
+   },
+   {
+    "gun": "Çarşamba",
+    "saat": "15:00",
+    "ders": "İşletim Sistemleri"
+   },
+   {
+    "gun": "Perşembe",
+    "saat": "13:00",
+    "ders": "Veritabanı"
+   },
+   {
+    "gun": "Cuma",
+    "saat": "15:00",
+    "ders": "Yapay Zekâya Giriş"
+   }
+  ]
+ },
+ "20200355": {
+  "ad": "Ceren Bulut",
+  "bolum": "Elektrik-Elektronik Müh.",
+  "sinif": 4,
+  "gno": 2.38,
+  "borc_tl": 0,
+  "devamsizlik": {
+   "Devre Analizi": 1,
+   "Elektromanyetik": 3,
+   "Sinyaller ve Sistemler": 4
+  },
+  "ders_programi": [
+   {
+    "gun": "Pazartesi",
+    "saat": "11:00",
+    "ders": "Devre Analizi"
+   },
+   {
+    "gun": "Salı",
+    "saat": "11:00",
+    "ders": "Elektromanyetik"
+   },
+   {
+    "gun": "Çarşamba",
+    "saat": "09:00",
+    "ders": "Sinyaller ve Sistemler"
+   },
+   {
+    "gun": "Perşembe",
+    "saat": "15:00",
+    "ders": "Kontrol Sistemleri"
+   },
+   {
+    "gun": "Cuma",
+    "saat": "11:00",
+    "ders": "Güç Elektroniği"
+   }
+  ]
+ },
+ "20220130": {
+  "ad": "Ozan Arslan",
+  "bolum": "Psikoloji",
+  "sinif": 2,
+  "gno": 3.65,
+  "borc_tl": 3800,
+  "devamsizlik": {
+   "Gelişim Psikolojisi": 6,
+   "Sosyal Psikoloji": 4,
+   "İstatistik": 3
+  },
+  "ders_programi": [
+   {
+    "gun": "Pazartesi",
+    "saat": "13:00",
+    "ders": "Gelişim Psikolojisi"
+   },
+   {
+    "gun": "Salı",
+    "saat": "13:00",
+    "ders": "Sosyal Psikoloji"
+   },
+   {
+    "gun": "Çarşamba",
+    "saat": "11:00",
+    "ders": "İstatistik"
+   },
+   {
+    "gun": "Perşembe",
+    "saat": "09:00",
+    "ders": "Bilişsel Psikoloji"
+   },
+   {
+    "gun": "Cuma",
+    "saat": "15:00",
+    "ders": "Deneysel Psikoloji"
+   }
+  ]
+ }
+}

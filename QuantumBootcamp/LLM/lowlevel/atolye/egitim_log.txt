@@ -1,0 +1,103 @@
+model        : Qwen/Qwen2.5-1.5B-Instruct
+veri         : 66 örnek, router.jsonl
+dağılım      : ilerleme=14  odeme=13  canli_ders=13  katalog=14  diger=12
+en uzun      : 64 token (EN_UZUN=192)
+LoRA         : r=8, alpha=16, target=q_proj,k_proj,v_proj,o_proj
+eğitilebilir : 2,179,072 / 1,545,893,376  (%0.14)
+epok         : 10   lr=0.0002   etkin yığın=8
+
+epok 1 | adım   1 | loss 11.833
+epok 1 | adım   2 | loss 9.934
+epok 1 | adım   3 | loss 11.181
+epok 1 | adım   4 | loss 8.493
+epok 1 | adım   5 | loss 9.553
+epok 1 | adım   6 | loss 7.817
+epok 1 | adım   7 | loss 8.384
+epok 1 | adım   8 | loss 5.604
+epok 1 | adım   9 | loss 5.349
+epok 2 | adım  10 | loss 3.955
+epok 2 | adım  11 | loss 3.542
+epok 2 | adım  12 | loss 2.918
+epok 2 | adım  13 | loss 2.788
+epok 2 | adım  14 | loss 2.546
+epok 2 | adım  15 | loss 2.129
+epok 2 | adım  16 | loss 2.184
+epok 2 | adım  17 | loss 1.892
+epok 2 | adım  18 | loss 2.107
+epok 3 | adım  19 | loss 1.053
+epok 3 | adım  20 | loss 1.461
+epok 3 | adım  21 | loss 0.876
+epok 3 | adım  22 | loss 1.019
+epok 3 | adım  23 | loss 0.698
+epok 3 | adım  24 | loss 0.807
+epok 3 | adım  25 | loss 0.952
+epok 3 | adım  26 | loss 0.504
+epok 3 | adım  27 | loss 0.499
+epok 4 | adım  28 | loss 0.575
+epok 4 | adım  29 | loss 0.688
+epok 4 | adım  30 | loss 0.451
+epok 4 | adım  31 | loss 0.375
+epok 4 | adım  32 | loss 0.363
+epok 4 | adım  33 | loss 0.481
+epok 4 | adım  34 | loss 0.345
+epok 4 | adım  35 | loss 0.411
+epok 4 | adım  36 | loss 0.365
+epok 5 | adım  37 | loss 0.135
+epok 5 | adım  38 | loss 0.371
+epok 5 | adım  39 | loss 0.361
+epok 5 | adım  40 | loss 0.167
+epok 5 | adım  41 | loss 0.290
+epok 5 | adım  42 | loss 0.436
+epok 5 | adım  43 | loss 0.319
+epok 5 | adım  44 | loss 0.242
+epok 5 | adım  45 | loss 0.271
+epok 6 | adım  46 | loss 0.253
+epok 6 | adım  47 | loss 0.428
+epok 6 | adım  48 | loss 0.442
+epok 6 | adım  49 | loss 0.044
+epok 6 | adım  50 | loss 0.104
+epok 6 | adım  51 | loss 0.016
+epok 6 | adım  52 | loss 0.132
+epok 6 | adım  53 | loss 0.160
+epok 6 | adım  54 | loss 0.131
+epok 7 | adım  55 | loss 0.018
+epok 7 | adım  56 | loss 0.011
+epok 7 | adım  57 | loss 0.047
+epok 7 | adım  58 | loss 0.218
+epok 7 | adım  59 | loss 0.207
+epok 7 | adım  60 | loss 0.269
+epok 7 | adım  61 | loss 0.006
+epok 7 | adım  62 | loss 0.010
+epok 7 | adım  63 | loss 0.006
+epok 8 | adım  64 | loss 0.006
+epok 8 | adım  65 | loss 0.043
+epok 8 | adım  66 | loss 0.005
+epok 8 | adım  67 | loss 0.038
+epok 8 | adım  68 | loss 0.064
+epok 8 | adım  69 | loss 0.013
+epok 8 | adım  70 | loss 0.016
+epok 8 | adım  71 | loss 0.004
+epok 8 | adım  72 | loss 0.003
+epok 9 | adım  73 | loss 0.005
+epok 9 | adım  74 | loss 0.003
+epok 9 | adım  75 | loss 0.003
+epok 9 | adım  76 | loss 0.001
+epok 9 | adım  77 | loss 0.004
+epok 9 | adım  78 | loss 0.008
+epok 9 | adım  79 | loss 0.003
+epok 9 | adım  80 | loss 0.009
+epok 9 | adım  81 | loss 0.010
+epok 10 | adım  82 | loss 0.001
+epok 10 | adım  83 | loss 0.001
+epok 10 | adım  84 | loss 0.001
+epok 10 | adım  85 | loss 0.001
+epok 10 | adım  86 | loss 0.001
+epok 10 | adım  87 | loss 0.001
+epok 10 | adım  88 | loss 0.001
+epok 10 | adım  89 | loss 0.001
+epok 10 | adım  90 | loss 0.001
+
+süre         : 1079 sn
+ilk loss     : 11.463
+son loss     : 0.001
+adapter      : 8.3 MB

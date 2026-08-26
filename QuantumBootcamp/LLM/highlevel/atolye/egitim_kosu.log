@@ -1,0 +1,31 @@
+
+══════════════════════════════════════════════════════════════════════════════
+  EĞİTİM — SFT + LoRA   (atölyede çalıştırılmaz)
+══════════════════════════════════════════════════════════════════════════════
+   model yükleniyor: Qwen/Qwen2.5-1.5B-Instruct  (cuda)
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   0%|          | 1/338 [00:01<11:08,  1.98s/it]Loading weights:  51%|█████     | 171/338 [00:02<00:01, 108.97it/s]Loading weights:  67%|██████▋   | 227/338 [00:03<00:01, 85.56it/s] Loading weights:  77%|███████▋  | 261/338 [00:03<00:00, 88.43it/s]Loading weights:  84%|████████▍ | 285/338 [00:03<00:00, 93.42it/s]Loading weights:  90%|█████████ | 305/338 [00:03<00:00, 90.63it/s]Loading weights:  95%|█████████▍| 321/338 [00:04<00:00, 76.01it/s]Loading weights: 100%|██████████| 338/338 [00:04<00:00, 77.74it/s]
+
+▸ VERİ
+──────────────────────────────────────────────────────────────────────────────
+dosya      : veri\ornekler.jsonl
+örnek      : 56
+araçlı     : 35  (%62)
+araçsız    : 21  (%38)
+en uzun    : 223 token
+
+▸ LoRA
+──────────────────────────────────────────────────────────────────────────────
+┌─ eğittiğimiz şey ──────────────────────────────────────────────────────────┐
+│ LoraConfig(r=8, lora_alpha=16,                                             │
+│            target_modules=['q_proj', 'k_proj', 'v_proj', 'o_proj'])        │
+└────────────────────────────────────────────────────────────────────────────┘
+eğitilebilir: 2.18 M
+toplam     : 1546 M
+oran       : %0.14
+
+▸ EĞİTİM
+──────────────────────────────────────────────────────────────────────────────
+   epok 1 | adım   1 | loss 2.652
+   epok 1 | adım   2 | loss 1.941
+   epok 1 | adım   3 | loss 2.684

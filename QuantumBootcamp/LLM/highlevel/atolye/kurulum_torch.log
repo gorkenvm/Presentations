@@ -1,0 +1,39 @@
+Looking in indexes: https://download.pytorch.org/whl/cu124
+Collecting torch
+  Downloading torch-2.6.0%2Bcu124-cp312-cp312-win_amd64.whl.metadata (28 kB)
+Collecting filelock (from torch)
+  Downloading filelock-3.32.3-py3-none-any.whl.metadata (2.0 kB)
+Collecting typing-extensions>=4.10.0 (from torch)
+  Using cached typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting networkx (from torch)
+  Downloading networkx-3.6.1-py3-none-any.whl.metadata (6.8 kB)
+Collecting jinja2 (from torch)
+  Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting fsspec (from torch)
+  Downloading fsspec-2026.7.0-py3-none-any.whl.metadata (10 kB)
+Collecting setuptools (from torch)
+  Downloading setuptools-78.1.0-py3-none-any.whl.metadata (6.6 kB)
+Collecting sympy==1.13.1 (from torch)
+  Downloading sympy-1.13.1-py3-none-any.whl.metadata (12 kB)
+Collecting mpmath<1.4,>=1.1.0 (from sympy==1.13.1->torch)
+  Downloading mpmath-1.3.0-py3-none-any.whl.metadata (8.6 kB)
+Collecting MarkupSafe>=2.0 (from jinja2->torch)
+  Downloading markupsafe-3.0.3-cp312-cp312-win_amd64.whl.metadata (2.8 kB)
+Downloading torch-2.6.0%2Bcu124-cp312-cp312-win_amd64.whl (2532.3 MB)
+   ---------------------------------------- 2.5/2.5 GB 4.5 MB/s  0:06:08
+Downloading sympy-1.13.1-py3-none-any.whl (6.2 MB)
+   ---------------------------------------- 6.2/6.2 MB 7.0 MB/s  0:00:00
+Downloading mpmath-1.3.0-py3-none-any.whl (536 kB)
+   ---------------------------------------- 536.2/536.2 kB 5.8 MB/s  0:00:00
+Using cached typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Downloading filelock-3.32.3-py3-none-any.whl (98 kB)
+Downloading fsspec-2026.7.0-py3-none-any.whl (206 kB)
+Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+Downloading markupsafe-3.0.3-cp312-cp312-win_amd64.whl (15 kB)
+Downloading networkx-3.6.1-py3-none-any.whl (2.1 MB)
+   ---------------------------------------- 2.1/2.1 MB 7.2 MB/s  0:00:00
+Downloading setuptools-78.1.0-py3-none-any.whl (1.3 MB)
+   ---------------------------------------- 1.3/1.3 MB 7.0 MB/s  0:00:00
+Installing collected packages: mpmath, typing-extensions, sympy, setuptools, networkx, MarkupSafe, fsspec, filelock, jinja2, torch
+
+Successfully installed MarkupSafe-3.0.3 filelock-3.32.3 fsspec-2026.7.0 jinja2-3.1.6 mpmath-1.3.0 networkx-3.6.1 setuptools-78.1.0 sympy-1.13.1 torch-2.6.0+cu124 typing-extensions-4.16.0

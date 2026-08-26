@@ -1,0 +1,17 @@
+# Atölyede provası yapılmış sürümler. Atölye günü "pip install -U" YAPMAYIN.
+#
+# torch'u ayrı kuruyoruz çünkü CUDA sürümü PyPI'de değil, PyTorch'un
+# kendi indeksinde:
+#
+#   pip install torch==2.6.0 --index-url https://download.pytorch.org/whl/cu124
+#
+# CUDA'sız (CPU) makinede sadece "pip install torch==2.6.0" yeter;
+# demolar çalışır ama eğitim çok yavaştır.
+
+transformers==5.15.1
+tokenizers==0.22.2
+accelerate==1.14.0
+peft==0.20.0
+sentence-transformers==6.0.0
+numpy==2.5.2
+safetensors==0.8.0

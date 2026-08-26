@@ -1,0 +1,16 @@
+# Notebook'lar satır sonu normalizasyonundan muaf — Jupyter kendi biçimini korur
+*.ipynb -text
+
+# Binary dosyalar
+*.pptx  binary
+*.docx  binary
+*.pdf   binary
+*.zip   binary
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.mp4   binary
+*.m4v   binary
+*.wav   binary
+*.safetensors binary

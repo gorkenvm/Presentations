@@ -1,0 +1,55 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   0%|          | 1/338 [00:01<07:14,  1.29s/it]Loading weights:  61%|######1   | 207/338 [00:01<00:00, 202.09it/s]Loading weights:  91%|#########1| 309/338 [00:02<00:00, 179.40it/s]Loading weights: 100%|##########| 338/338 [00:02<00:00, 151.95it/s]
+MODEL: Qwen/Qwen2.5-1.5B-Instruct
+
+========================================================================================
+A · çıplak soru, sistem promptu yok
+========================================================================================
+greedy : Üzgünüm, ancak "Çınar Üniversitesi" hakkında detaylı bilgiye sahip değilim. Bu unvan genellikle bir üniversitenin adıdır ve genellikle başka bir konuda konuşmak için kullanılır. Eğer bu unvan bir özel kurum veya kuruluşunun adıysa, o durumda bu bilgiyi paylaşamıyorum. Eğer bu bilgileri öğrenmek isti
+         sayilar: (yok)
+  --- temp 1.0, 5 tohum ---
+    tohum  11: (sayi yok)             | Şöyle bir açıklama yapabilmek için bazı bilgiler gereklidir. Çınar Üniversitesi hakkında daha fazla bilgi vermeden, gene
+    tohum  42: (sayi yok)             | Çınar Üniversitesi'nde devamsızlık sınıra dahil değil. Çin Üniversitesi'nde devamsızlık sınıra dahildi ve üniversitenin 
+    tohum   7: (sayi yok)             | İşte Çınar Üniversitesi'nin devamsızlık sınırları hakkında bilgi: 1) Üniversite: İstanbul'un Çınar区'da yer alan Çınar Te
+    tohum   3: (sayi yok)             | Çınar Üniversitesi, Türkiye'deki önemli bir üniversite olan "İzmir Yıldırım Devri University". Bu üniversitenin devamsız
+    tohum  99: (sayi yok)             | Başka bir taraftan belirsiz gibi görünüyor ama Çınar Üniversitesi'ndeki devamsızlık sınırı hakkında bilgi vermek için da
+    => farkli sayilar: []   sayi ureten tohum: 0/5   CELISKI=False
+
+========================================================================================
+B · ROL verilmiş asistan
+========================================================================================
+greedy : Devamsızlık sınırı, bir öğrencinin devam etmek için gereken en az süre. Bu süre, öğrencinin eğitim sistemindeki yerini korumak ve öğrenme potansiyelini sürdürmek için gerekli olan sürelerdir. Sınıf dördü, mezun olma, yüksek lisans veya doktora gibi uzun süreli eğitimlere sahip öğrenciler için bu sın
+         sayilar: (yok)
+  --- temp 1.0, 5 tohum ---
+    tohum  11: (sayi yok)             | Devamsızlık sınırı, bir öğrencinin öğrenme hızının, yeteneklerini ve bilgilerini dengede hala sürdürdüğü anlamına gelir.
+    tohum  42: (sayi yok)             | Devamsızlık sınırı, bir yüksek akademiye ders alınan öğrencilerin son dersi tamamlandığı gününü belirtmek için kullanıla
+    tohum   7: (sayi yok)             | Devamsızlık sınırı, bir üniversiteye öğrencinin yeni derslerde kalmak zorunda bırakacağını belirtir. Öğrenci, devamsızlı
+    tohum   3: (sayi yok)             | Devamsızlık sınırı, bir üniversitenin öğrencilerine devam etme hakkı için belirlenmiş en az 100 saat arasında süren süre
+    tohum  99: (sayi yok)             | Devamsızlık sınırı, üniversiteye yeni bir öğrencinin ilk dört yıl (günde 90 saat) okulta taşınabilmek için gerekli olan 
+    => farkli sayilar: []   sayi ureten tohum: 0/5   CELISKI=False
+
+========================================================================================
+C · rol + 'kurumsal' baskı
+========================================================================================
+greedy : Devamsızlık sınırı, eğitimdeki devamsızlıkların sınırlarıdır. Bu sınır, öğrencinin eğitim sürecindeki başarısıyla ilgili olarak belirlenmiş bir sınırıdır. Öğrenci, bu sınırı aşmazsa eğitimden çıkarılabilir. Devamsızlık sınırı, öğrencilerin derslerini tamamlamalarına yardımcı olmak için belirlenen bi
+         sayilar: (yok)
+  --- temp 1.0, 5 tohum ---
+    tohum  11: (sayi yok)             | Devamsızlık sınırı, yüksek öğrenim gereksinimlerine sahip öğrenciler için okuldan ayrılmak zorunda kalan en az süre aral
+    tohum  42: %20, %30, %65          | Devamsızlık sınırı, eğitim sağlığı ve devam eden olma fırsatlarının sonucu olarak belirlenen sınırdır. Bu nedenle, devam
+    tohum   7: (sayi yok)             | Devamsızlık sınırı, öğrenim döngüsü üzerindeki önemli bir kavramdır. Ancak "devamsızlık" kelimesinin standart bir anlamd
+    tohum   3: (sayi yok)             | Devamsızlık sınırı, eğitim sağlığı alanında gerekli olan tüm gereksinimlerden en yüksek limitdir. Bu sınır genellikle 40
+    tohum  99: (sayi yok)             | Devamsızlık sınırı, üniversiteye yeni bir öğrencinin ilk dört yıl (gerçek devamı) öğrenim yapma hakkına sahip olmadığını
+    => farkli sayilar: ['20', '30', '65']   sayi ureten tohum: 1/5   CELISKI=True
+
+========================================================================================
+D · rol + 'bilmiyorum de' izni  (iyi prompt)
+========================================================================================
+greedy : Bu bilginizin tamamınıza ulaşabilmek için daha fazla bilgi gerekiyor. Devamsızlık sınırı, bir çalışma veya projeye ne kadar süre kaldığında durumun devamsız olduğunu gösterir. Bu sınırı belirlemek için genellikle şu faktörler kullanılır: 1. Çalışma türü (örneğin, eğitim, işlevselliği) 2. Çalışma sür
+         sayilar: (yok)
+  --- temp 1.0, 5 tohum ---
+    tohum  11: (sayi yok)             | Bu bilgiye sahip değilim.
+    tohum  42: (sayi yok)             | Devamsızlık sınırı, bir eğitim kurumu veya yurtdışında çalışılan çalışanın devamsızlığını ölçmek için kullanılan en sık 
+    tohum   7: (sayi yok)             | Devamsızlık sınırı, bir çalışma, öğrencinin çalışmasını bitirmede kalmış durumunu gösterir. Bu, öğrencinin devamsızlık s
+    tohum   3: (sayi yok)             | Devamsızlık sınırı, bir çalışma veya projeye bağlı olabilecek en az dört yıllık devamsızlık sınırı vardır. 1. İşveren: B
+    tohum  99: (sayi yok)             | Bu bilginizin ulaşılması için en uygun bir kaynak şu: https://www.sice.msu.edu/guides/faculty-handbook/students/academic
+    => farkli sayilar: []   sayi ureten tohum: 0/5   CELISKI=False

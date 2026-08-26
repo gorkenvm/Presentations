@@ -1,0 +1,93 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   0%|          | 1/338 [00:01<08:50,  1.57s/it]Loading weights:  54%|█████▍    | 183/338 [00:01<00:01, 146.26it/s]Loading weights:  76%|███████▌  | 256/338 [00:02<00:00, 136.11it/s]Loading weights:  89%|████████▉ | 302/338 [00:03<00:00, 105.18it/s]Loading weights:  98%|█████████▊| 332/338 [00:03<00:00, 83.72it/s] Loading weights: 100%|██████████| 338/338 [00:03<00:00, 90.35it/s]
+MODEL: Qwen/Qwen2.5-1.5B-Instruct 
+
+==========================================================================================
+1) HALUSINASYON | Data Scientist Path kaç saat sürüyor ve ücreti ne kadar?
+==========================================================================================
+  greedy: Üzgünüm, Data Scientist'ün profesyonel eğitimi hakkında bilgiye sahip değilim. Ancak, genellikle Data Scientist'ların eğitim süresi ve ücretleri farklı olabilir. Bazı şirketlerde Data Scientist'lar için 1-2 yıl süren bir eğitim programı vardır ve bu eğitimde y
+          sayilar: ['1', '2', '40', '60']
+    tohum  11: ['60', '75']                       | Data Science yasalı olarak yüksek puanlanan bir profesyonel eğitimin olması gerekir, ancak çeşitli şirketlerde
+    tohum  42: ['1', '40', '50', '24', '000', '6'] | Data Scientist'in işe alınması için belirli bir süre ve ücret öngörülmelidir. Data Scientist rolünün işçiliği 
+    tohum   7: ['35', '40']                       | Data Science ile ilgili eğitimin bir örneği olan Data Scientist'lık programının, 35 - 40 saat süren ve birçok 
+    tohum   3: ['3', '12', '3', '6', '4', '7']    | En doğrudan bir bilgi verme yeteneğine sahip değilim ama, genellikle Data Scientist profesyonellerinde genel o
+    tohum  99: ['52', '3', '40', '6']             | Umarım sen bir eğitim programında bulunsun, Data Science ile ilgili bilgiyi paylaşmam benim gibi değil mi? İşt
+    => farkli cevap kumesi: 5/5   sayi ureten: 5/5   CELISKI=True
+
+==========================================================================================
+1) HALUSINASYON | AI Data Scientist Bootcamp kaç hafta ve ücreti ne?
+==========================================================================================
+  greedy: Sen Miuul eğitim platformu, AI (Artificial Intelligence) ve Data Science ile ilgili bir bootcamp programı sunar. Ancak, belirli bir "bootcamp" programının haftalık süreleri veya ücretlerini belirtmek için genellikle farklı bir platform veya kuruluş tarafından 
+          sayilar: ['10', '20']
+    tohum  11: []                                 | İyi bir soru! AI Data Scientist Bootcamp hakkında bilgilere bakmak için çeşitli sitemden, kursun resmi website
+    tohum  42: ['1', '3', '4', '20', '000', '30'] | AI Data Science Bootcamp'ün bir haftadır olabilir, ancak dördü veya daha fazla haftalık eğitim programları da 
+    tohum   7: ['10', '5', '12', '16', '32', '100'] | İmkanınızda, AI Data Science Bootcamp'ı 10 haftalık bir kurs olduğunu düşünüyorum. Genel olarak, bu tür kursla
+    tohum   3: ['10', '32', '4', '8']             | Umarım sen bir eğitim verimli bir şekilde ilerleme amaçladığınızı unutmayın. Bunun için, sizden daha detaylı b
+    tohum  99: []                                 | Umarım sen bir eğitim konusunda zorlanıyorsun, ben senin için en iyi yardımcı olmak istiyorum. Ancak bu, genel
+    => farkli cevap kumesi: 4/5   sayi ureten: 3/5   CELISKI=True
+
+==========================================================================================
+1) HALUSINASYON | Zaman Serileri kursu kaç saat?
+==========================================================================================
+  greedy: Zaman serileri (Time Series) kursu, genellikle 4-6 saatlik derslerdir. Bu dersler, zaman serilere dayalı veri analizi konusunda temel bilgileri ve teknikleri kapsar.
+          sayilar: ['4', '6']
+    tohum  11: ['4']                              | Zaman serilere en az 4 saatlik eğitim programı sunmaktadır, ancak dönem değişikliği ve konu yönleri farklılık 
+    tohum  42: ['50', '120']                      | Zaman Serileri (Time Series) kursunun dördüncü seminer sonucunda en az 50 saatlik olsalar, en az 120 saatlik o
+    tohum   7: []                                 | Zaman serileri bir eğitimi olmaz. Bu, zaman ve kariyer planlamasına dayalı bir uygulama olarak kullanılır. Her
+    tohum   3: ['45']                             | Zaman serileri eğitim kursunuza, 45 saatlik bir eğitim dersine sahip olacağız.
+    tohum  99: ['12']                             | Zaman serileri eğitimine en az 12 saat verilebilir.
+    => farkli cevap kumesi: 5/5   sayi ureten: 4/5   CELISKI=True
+
+==========================================================================================
+2) IYI PROMPT
+==========================================================================================
+   Üzgünüm, bu bilgiye sahip değilim. Data Scientist path'ı hakkında detaylı bilgiye erişebilirsiniz. Ancak genel olarak, bir Data Scientist'in eğitiminizi tamamlamak için 1-2 yıl sürebilir ve ücretler arasında $70.000-$150.000 USD arasında değişebilir. Bu değerler genellikle bir şirket tarafından beli
+   sayilar: ['1', '2', '70', '000', '150', '000']
+
+==========================================================================================
+3) RAG  (91 parca, e5-small, kosinus)
+==========================================================================================
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 3144.07it/s]
+   matris: (91, 384)
+
+   SORU: Data Scientist Path kaç saat sürüyor ve ücreti ne kadar?
+     0.909  Eğitim 44 — Data Scientist Path
+     0.898  Eğitim 68 — Data Scientist AI Road Map
+     0.874  Eğitim 53 — Data Engineer Path
+     -> Data Scientist Path süresi: 68 saat, ücreti: 300 USD
+
+   SORU: AI Data Scientist Bootcamp kaç hafta ve ücreti ne?
+     0.911  Eğitim 71 — AI Data Scientist Bootcamp
+     0.881  Eğitim 70 — Data Analytics Bootcamp
+     0.876  Eğitim 72 — İK Analitiği Bootcamp
+     -> Durum: AI Data Scientist Bootcamp Süre: 17 hafta Ücret: 649 USD
+
+   SORU: Zaman Serileri kursu kaç saat?
+     0.884  Eğitim 05 — Zaman Serileri
+     0.831  Eğitim 58 — İş Dünyası için Veri Bilimi
+     0.828  Eğitim 28 — Spark ile Gerçek Zamanlı Veri İşleme
+     -> Zaman Serileri kursu 7 saatdir. Bu bilginin kayıtlardan alınmıştır.
+
+==========================================================================================
+4) KOPRU  | Benim ilerlemem ne durumda? Kayıt numaram 482137
+==========================================================================================
+     0.820  Eğitim 67 — Data Analytics AI Road Map
+     0.820  Eğitim 78 — Microsoft Fabric Uygulamalı Eğitim Programı
+     0.820  Eğitim 73 — Biyoinformatik Bootcamp
+   -> Bu bilgi katalogda yer almıyor.
+
+==========================================================================================
+5) ARAC CAGRISI - fine-tune ONCESI
+==========================================================================================
+
+   -- KISA (tarif yok) --
+     X   482289 numaralı öğrencinin ilerlemesi ne dur geçerli araç çağrısı yok
+     X   Perşembe günü canlı dersim var mı? Kayıt no  geçerli araç çağrısı yok
+     X   482215 numaralı kaydın kalan ödemesi ne kada geçerli araç çağrısı yok
+     => 0/3
+
+   -- UZUN (tarif var) --
+     OK  482289 numaralı öğrencinin ilerlemesi ne dur ilerleme_durumu("482289")
+     OK  Perşembe günü canlı dersim var mı? Kayıt no  canli_ders_programi("482241")
+     OK  482215 numaralı kaydın kalan ödemesi ne kada odeme_durumu("482215")
+     => 3/3
