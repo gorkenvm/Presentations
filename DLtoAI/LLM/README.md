@@ -1,4 +1,4 @@
-# LLM MasterClass — High Level
+# LLM MasterClass
 
 Kavramsal anlatım: attention'dan RAG ve fine-tune'a.
 
@@ -9,3 +9,5 @@ Kavramsal anlatım: attention'dan RAG ve fine-tune'a.
 | `atolye/` | Atölye adımları: attention, prompt, few-shot, RAG, fine-tune, test |
 | `metinler/` | Sunucu metni, Harari bölümü, transformer anlatımı, ham notlar |
 | `images/` | Sunumda kullanılan görseller ve ekran görüntüleri |
+
+Low-level (LoRA eğitimi) tarafı ayrı programa aittir: [`QuantumBootcamp/LLM/lowlevel`](../../QuantumBootcamp/LLM/lowlevel)
