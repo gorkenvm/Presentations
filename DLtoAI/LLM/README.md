@@ -1,13 +1,13 @@
 # LLM MasterClass
 
-Kavramsal anlatım: attention'dan RAG ve fine-tune'a.
+Transformer'ın içi: tokenization'dan attention'a, encoder–decoder'dan RLHF'e.
 
 | Yol | İçerik |
 |---|---|
-| `DL_MasterClass_Kuantum_LLM_v31.pptx` | Sunum, sunucu notlarıyla birlikte |
-| `DL_MasterClass_Kuantum_LLM_v31 - share.pptx` | Paylaşım sürümü (sunucu notları temizlenmiş), 104 slayt |
+| [`ders-notlari.md`](ders-notlari.md) | **Katılımcı ders notları** — dersin tamamının okunabilir metni |
+| `DL_MasterClass_Kuantum_LLM_v31 - share.pptx` | Sunum, 104 slayt (paylaşım sürümü) |
 | `atolye/` | Atölye adımları: attention, prompt, few-shot, RAG, fine-tune, test |
-| `metinler/` | Sunucu metni, Harari bölümü, transformer anlatımı, ham notlar |
-| `images/` | Sunumda kullanılan görseller ve ekran görüntüleri |
+| `images/` | Sunumda kullanılan görseller ve şemalar |
 
-Low-level (LoRA eğitimi) tarafı ayrı programa aittir: [`QuantumBootcamp/LLM/lowlevel`](../../QuantumBootcamp/LLM/lowlevel)
+Uygulamalı LoRA eğitimi ve n8n atölyesi ayrı programdadır:
+[`QuantumBootcamp/LLM`](../../QuantumBootcamp/LLM)
