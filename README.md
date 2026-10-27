@@ -14,8 +14,8 @@ Veysel Murat Görken'in eğitim, atölye ve konferans materyalleri. İki ana pro
 
 | Klasör | İçerik |
 |---|---|
-| [`QuantumBootcamp/DL`](QuantumBootcamp/DL) | Deep Learning MasterClass sunumları, içerik planı, anlatım metinleri, görseller |
-| [`QuantumBootcamp/DL/YuzAnalizi`](QuantumBootcamp/DL/YuzAnalizi) | Colab yüz analizi uygulaması |
+| [`QuantumBootcamp/DL`](QuantumBootcamp/DL) | Deep Learning MasterClass: sunum (paylaşım sürümü), katılımcı ders notları, görseller |
+| [`QuantumBootcamp/DL/YuzAnalizi`](QuantumBootcamp/DL/YuzAnalizi) | Colab uygulaması: yüz analizi, YOLO ile nesne tespiti ve kamerayla canlı takip |
 | [`QuantumBootcamp/LLM`](QuantumBootcamp/LLM) | LLM atölyesi: sunum, ders notları, LoRA eğitim atölyesi, n8n notları |
 
 ## Notlar
