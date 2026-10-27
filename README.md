@@ -14,13 +14,13 @@ Veysel Murat Görken'in eğitim, atölye ve konferans materyalleri. İki ana pro
 
 | Klasör | İçerik |
 |---|---|
-| [`QuantumBootcamp/DL`](QuantumBootcamp/DL) | Deep Learning MasterClass: sunum (paylaşım sürümü), katılımcı ders notları, görseller |
+| [`QuantumBootcamp/DL`](QuantumBootcamp/DL) | Deep Learning MasterClass: sunum, ders notları, görseller |
 | [`QuantumBootcamp/DL/YuzAnalizi`](QuantumBootcamp/DL/YuzAnalizi) | Colab uygulaması: yüz analizi, YOLO ile nesne tespiti ve kamerayla canlı takip |
 | [`QuantumBootcamp/LLM`](QuantumBootcamp/LLM) | LLM atölyesi: sunum, ders notları, LoRA eğitim atölyesi, n8n notları |
 
 ## Notlar
 
-- Sunumlar paylaşım sürümüdür: sunucu notları çıkarılmıştır. Her dersin içeriği `ders-notlari.md` dosyasında okunabilir metin olarak durur.
+- Her dersin içeriği `ders-notlari.md` dosyasında okunabilir metin olarak durur.
 - Sunumların yalnızca en güncel sürümleri repoda tutulur; ara sürümler yerel arşivdedir.
 - Atölye klasörlerindeki `.log` dosyaları derste yapılan gerçek koşuların kaydıdır, bilerek saklanmıştır.
 - Eğitilmiş model ağırlıkları (`*.safetensors`, `*.weights`) repoda tutulmaz; atölye adımları çalıştırıldığında yeniden üretilir veya indirilir.
